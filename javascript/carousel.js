@@ -1,7 +1,10 @@
-let delay = 10 * 1000; // 10 seconds
-let nextImageButton = document.getElementById("carousel-next-image");
+import * as bootstrap from 'bootstrap'
 
-// automatically change carousel image.
-setInterval(() => {
-    nextImageButton.click();
-}, delay);
+// get carousel
+let carousel = document.getElementById('carousel-trends')
+
+// define carousel config
+new bootstrap.Carousel(carousel, {
+    interval: 4000,
+    keyboard: false,
+})
