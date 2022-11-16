@@ -21,3 +21,12 @@
     height: 15rem;
     object-fit: cover;
 }
+
+.card-img-bg-color {
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+}
+
+.card-img-bg-color:hover {
+    opacity: 0.4;
+}
