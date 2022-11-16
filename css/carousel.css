@@ -10,5 +10,14 @@
     width: 100%;
     top: 0;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-line {
+    transform: scale(1.2);
+}
+
+.card-img-top {
+    height: 15rem;
+    object-fit: cover;
 }
