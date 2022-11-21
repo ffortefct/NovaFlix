@@ -1,5 +1,5 @@
 {
-    "category_name" : {
+    "films" : {
         "content_name" : {
             "duration": ..., // e.g. 180
             "cast": ["...", ...],
@@ -9,5 +9,30 @@
         },
         ...
     },
-    ...
+    "series" : {
+        "content_name" : {
+            "director": "...",
+            "description" : "...",
+            "evaluation" : ..., / e.g. 0.0 <= evaluation <= 5.0
+            "episodes" : [
+                {
+                    "duration": ..., // e.g. 180
+                    "cast": ["...", ...],
+                    "description" : "...",
+                }
+                ...
+            ]
+        },
+        ...
+    },
+    "documentaries" : {
+        "content_name" : {
+            "duration": ..., // e.g. 180
+            "cast": ["...", ...],
+            "director": "...",
+            "description" : "...",
+            "evaluation" : ..., / e.g. 0.0 <= evaluation <= 5.0
+        },
+        ...
+    }
 }
