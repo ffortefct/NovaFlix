@@ -20,25 +20,25 @@ function genSearch() {
             function contents() {
                 let items = ''
 
-                for (let categoryName in json) {
-                    for (let content of json[categoryName]) {
-                        if (content.name.toUpperCase().includes(searchResult)) {
-                            items += 
-                            `
-                            <div class="col">
-                                <div class="card border-0 bg-dark">
-                                    <div class="card-img-bg-color">
-                                        <a href="#">
-                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="" src="../images/content/${content.image}">
-                                        </a>
-                                    </div>
-                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${content.name}</b></p>
-                                </div>  
-                            </div>
-                            `
-                        }
+                for (let contentName in json) {
+                    let contentAttrs = json[contentName]
+                    if (contentName.toUpperCase().includes(searchResult)) {
+                        items += 
+                        `
+                        <div class="col">
+                            <div class="card border-0 bg-dark">
+                                <div class="card-img-bg-color">
+                                    <a href="./film.html?name=${contentName}">
+                                        <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="" src="../images/content/${contentAttrs.image}">
+                                    </a>
+                                </div>
+                                <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${contentName}</b></p>
+                            </div>  
+                        </div>
+                        `
                     }
                 }
+
                 return items
             }
 

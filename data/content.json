@@ -1,20 +1,10 @@
 {
-    "films" : [
-        {
-            "name" : "Inception",
-            "duration": 148,
-            "cast": ["Leonardo DiCaprio ", "Joseph Gordon-Levitt ", "Elliot Page"],
-            "director": "Christopher Nolan",
-            "description" : "Um ladrão que rouba segredos corporativos por meio do uso de tecnologia de compartilhamento de sonho é dada a tarefa inversa de plantar uma ideia na mente de um CEO.",
-            "evaluation" : 4.9,
-            "image" : "ex1.jpg"
-        }
-    ]
-    ,
-    "series": [
-
-    ],
-    "documentaries": [
-
-    ]
+    "Inception" : {
+        "duration": 148,
+        "cast": ["Leonardo DiCaprio ", "Joseph Gordon-Levitt ", "Elliot Page"],
+        "director": "Christopher Nolan",
+        "description" : "Um ladrão que rouba segredos corporativos por meio do uso de tecnologia de compartilhamento de sonho é dada a tarefa inversa de plantar uma ideia na mente de um CEO.",
+        "evaluation" : 4.9,
+        "image" : "ex1.jpg"
+    }
 }

@@ -1,38 +1,23 @@
 {
-    "films" : {
-        "content_name" : {
-            "duration": ..., // e.g. 180
-            "cast": ["...", ...],
-            "director": "...",
-            "description" : "...",
-            "evaluation" : ..., / e.g. 0.0 <= evaluation <= 5.0
-        },
-        ...
+    "film_name/documentary_name" : {
+        "duration": ..., // e.g. 180
+        "cast": ["...", ...],
+        "director": "...",
+        "description" : "...",
+        "evaluation" : ..., / e.g. 0.0 <= evaluation <= 5.0
     },
-    "series" : {
-        "content_name" : {
-            "director": "...",
-            "description" : "...",
-            "evaluation" : ..., / e.g. 0.0 <= evaluation <= 5.0
-            "episodes" : [
-                {
-                    "duration": ..., // e.g. 180
-                    "cast": ["...", ...],
-                    "description" : "...",
-                }
-                ...
-            ]
-        },
-        ...
+    "series_name" : {
+        "director": "...",
+        "description" : "...",
+        "evaluation" : ..., / e.g. 0.0 <= evaluation <= 5.0
+        "episodes" : [
+            {
+                "duration": ..., // e.g. 180
+                "cast": ["...", ...],
+                "description" : "...",
+            }
+            ...
+        ]
     },
-    "documentaries" : {
-        "content_name" : {
-            "duration": ..., // e.g. 180
-            "cast": ["...", ...],
-            "director": "...",
-            "description" : "...",
-            "evaluation" : ..., / e.g. 0.0 <= evaluation <= 5.0
-        },
-        ...
-    }
+    ...
 }
