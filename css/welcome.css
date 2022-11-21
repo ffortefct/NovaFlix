@@ -1,0 +1,33 @@
+.bg-welcome-img {
+    background-image: url('../images/welcome/ex1.jpg');
+    height: 95vh;
+}
+
+.welcome-mask {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hr-divisor {
+    opacity: 100%;
+    margin: 0px;
+    border-top: thick solid #717981;
+}
+
+.auto-pulsate {
+    color: whitesmoke;
+    animation: pulsate 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes pulsate {
+    0% { opacity: 1.0; }
+    10% { opacity: 0.9; }
+    20% { opacity: 0.8; }
+    30% { opacity: 0.7; }
+    40% { opacity: 0.6; }
+    50% { opacity: 0.5; }
+    60% { opacity: 0.6; }
+    70% { opacity: 0.7; }
+    80% { opacity: 0.8; }
+    90% { opacity: 0.9; }
+    100% { opacity: 1.0; }
+}
