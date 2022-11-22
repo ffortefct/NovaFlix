@@ -79,7 +79,7 @@ function setDragMode() {
     poss.forEach(pos => {
         setEvents(pos)
         containerDiv(pos).classList.add('dead-content')
-        pos.classList.add('drag-item')
+        pos.classList.add('drag-item', 'grow')
         pos.setAttribute('draggable', true)
     })
 }
@@ -88,7 +88,7 @@ function unsetDragMode() {
     poss.forEach(pos => {
         unsetEvents(pos)
         pos.setAttribute('draggable', false)
-        pos.classList.remove('drag-item')
+        pos.classList.remove('drag-item', 'grow')
         containerDiv(pos).classList.remove('dead-content')
     })
 }
