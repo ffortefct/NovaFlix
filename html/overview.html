@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="../css/carousel.css">
         <link href="../css/libs/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/draggable-sections.css" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation Bar -->
@@ -93,473 +94,494 @@
                 </button>
             </div>
 
+            <!-- Drag and Drop section -->
+            <section class="pt-5 bg-dark">
+                <div class="container text-end">
+                    <div class="me-5 mt-2">
+                        <div class="me-3">
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="button" onclick="dragModeSwitch()">Arrastar carrosséis</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Trending section -->
             <section class="pt-5 bg-dark">
-                <div class="container">
-                    <h3 class="mb-2 text-white">Tendências</h3>
-                    <div class="row">
-                        <div class="col-16 mb-3">
-                            <button class="btn btn-dark me-3 btn-line" type="button" data-bs-target="#carousel-films" data-bs-slide="prev">
-                                <i class="bi bi-arrow-left-circle"></i>
-                            </button>
-                            <button class="btn btn-dark btn-line" type="button" data-bs-target="#carousel-films" data-bs-slide="next">
-                                <i class="bi bi-arrow-right-circle"></i>
-                            </button>
-                        </div>
-                        <div class="col-16">
-                            <div id="carousel-films" class="carousel slide" data-ride="carousel">
-                                <!-- TODO - change temporary images and names -->
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="row" data-bs-toggle="modal" data-bs-target="#">
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex1" src="../images/content/ex1.jpg">
-                                                        </a>
+                <div id="pos-1">
+                    <div class="container">
+                        <h3 class="mt-3 mb-2 text-white">Tendências</h3>
+                        <div class="row">
+                            <div class="col-16 mb-3">
+                                <button class="btn btn-dark me-3 btn-line" type="button" data-bs-target="#carousel-trending" data-bs-slide="prev">
+                                    <i class="bi bi-arrow-left-circle"></i>
+                                </button>
+                                <button class="btn btn-dark btn-line" type="button" data-bs-target="#carousel-trending" data-bs-slide="next">
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </button>
+                            </div>
+                            <div class="col-16">
+                                <div id="carousel-trending" class="carousel slide" data-ride="carousel">
+                                    <!-- TODO - change temporary images and names -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex1" src="../images/content/ex1.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 1</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 1</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex2" src="../images/content/ex2.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex2" src="../images/content/ex2.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 2</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 2</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex3" src="../images/content/ex3.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex3" src="../images/content/ex3.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 3</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 3</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex4" src="../images/content/ex4.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex4" src="../images/content/ex4.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 4</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 4</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                        </div>            
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex5" src="../images/content/ex5.jpg">
-                                                        </a>
+                                            </div>            
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex5" src="../images/content/ex5.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 5</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 5</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex6" src="../images/content/ex6.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex6" src="../images/content/ex6.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 6</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 6</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex7" src="../images/content/ex7.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex7" src="../images/content/ex7.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 7</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 7</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>                        
+                        </div>                        
+                    </div>
                 </div>
+                
             </section>
 
             <!-- Films Section -->
             <section class="pt-5 bg-dark">
-                <div class="container">
-                    <h3 class="mb-2 text-white">Filmes</h3>
-                    <div class="row">
-                        <div class="col-16 mb-3">
-                            <button class="btn btn-dark me-3 btn-line" type="button" data-bs-target="#carousel-trends" data-bs-slide="prev">
-                                <i class="bi bi-arrow-left-circle"></i>
-                            </button>
-                            <button class="btn btn-dark btn-line" type="button" data-bs-target="#carousel-trends" data-bs-slide="next">
-                                <i class="bi bi-arrow-right-circle"></i>
-                            </button>
-                        </div>
-                        <div class="col-16">
-                            <div id="carousel-trends" class="carousel slide" data-ride="carousel">
-                                <!-- TODO - change temporary images and names -->
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="row" data-bs-toggle="modal" data-bs-target="#">
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex1" src="../images/content/ex1.jpg">
-                                                        </a>
+                <div id="pos-2">
+                    <div class="container">
+                        <h3 class="mt-3 mb-2 text-white">Filmes</h3>
+                        <div class="row">
+                            <div class="col-16 mb-3">
+                                <button class="btn btn-dark me-3 btn-line" type="button" data-bs-target="#carousel-films" data-bs-slide="prev">
+                                    <i class="bi bi-arrow-left-circle"></i>
+                                </button>
+                                <button class="btn btn-dark btn-line" type="button" data-bs-target="#carousel-films" data-bs-slide="next">
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </button>
+                            </div>
+                            <div class="col-16">
+                                <div id="carousel-films" class="carousel slide" data-ride="carousel">
+                                    <!-- TODO - change temporary images and names -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex1" src="../images/content/ex1.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 1</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 1</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex2" src="../images/content/ex2.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex2" src="../images/content/ex2.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 2</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 2</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex3" src="../images/content/ex3.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex3" src="../images/content/ex3.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 3</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 3</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex4" src="../images/content/ex4.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex4" src="../images/content/ex4.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 4</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 4</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                        </div>            
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex5" src="../images/content/ex5.jpg">
-                                                        </a>
+                                            </div>            
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex5" src="../images/content/ex5.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 5</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 5</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex6" src="../images/content/ex6.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex6" src="../images/content/ex6.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 6</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 6</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex7" src="../images/content/ex7.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex7" src="../images/content/ex7.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 7</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 7</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex8" src="../images/content/ex8.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex8" src="../images/content/ex8.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 8</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 8</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>                        
+                        </div>                        
+                    </div>
                 </div>
             </section>
 
             <!-- Series Section -->
             <section class="pt-5 bg-dark">
-                <div class="container">
-                    <h3 class="mb-2 text-white">Séries</h3>
-                    <div class="row">
-                        <div class="col-16 mb-3">
-                            <button class="btn btn-dark me-3 btn-line" type="button" data-bs-target="#carousel-series" data-bs-slide="prev">
-                                <i class="bi bi-arrow-left-circle"></i>
-                            </button>
-                            <button class="btn btn-dark btn-line" type="button" data-bs-target="#carousel-series" data-bs-slide="next">
-                                <i class="bi bi-arrow-right-circle"></i>
-                            </button>
-                        </div>
-                        <div class="col-16">
-                            <div id="carousel-series" class="carousel slide" data-ride="carousel">
-                                <!-- TODO - change temporary images and names -->
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="row" data-bs-toggle="modal" data-bs-target="#">
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex1" src="../images/content/ex1.jpg">
-                                                        </a>
+                <div id="pos-3">
+                    <div class="container">
+                        <h3 class="mt-3 mb-2 text-white">Séries</h3>
+                        <div class="row">
+                            <div class="col-16 mb-3">
+                                <button class="btn btn-dark me-3 btn-line" type="button" data-bs-target="#carousel-series" data-bs-slide="prev">
+                                    <i class="bi bi-arrow-left-circle"></i>
+                                </button>
+                                <button class="btn btn-dark btn-line" type="button" data-bs-target="#carousel-series" data-bs-slide="next">
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </button>
+                            </div>
+                            <div class="col-16">
+                                <div id="carousel-series" class="carousel slide" data-ride="carousel">
+                                    <!-- TODO - change temporary images and names -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex1" src="../images/content/ex1.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 1</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 1</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex2" src="../images/content/ex2.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex2" src="../images/content/ex2.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 2</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 2</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex3" src="../images/content/ex3.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex3" src="../images/content/ex3.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 3</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 3</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex4" src="../images/content/ex4.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex4" src="../images/content/ex4.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 4</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 4</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                        </div>            
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex5" src="../images/content/ex5.jpg">
-                                                        </a>
+                                            </div>            
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex5" src="../images/content/ex5.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 5</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 5</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex6" src="../images/content/ex6.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex6" src="../images/content/ex6.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 6</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 6</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>                        
+                        </div>                        
+                    </div>
                 </div>
             </section>
 
             <!-- Documentaries Section -->
             <section class="pt-5 bg-dark">
-                <div class="container">
-                    <h3 class="mb-2 text-white">Documentários</h3>
-                    <div class="row">
-                        <div class="col-16 mb-3">
-                            <button class="btn btn-dark me-3 btn-line" type="button" data-bs-target="#carousel-documentaries" data-bs-slide="prev">
-                                <i class="bi bi-arrow-left-circle"></i>
-                            </button>
-                            <button class="btn btn-dark btn-line" type="button" data-bs-target="#carousel-documentaries" data-bs-slide="next">
-                                <i class="bi bi-arrow-right-circle"></i>
-                            </button>
-                        </div>
-                        <div class="col-16">
-                            <div id="carousel-documentaries" class="carousel slide" data-ride="carousel">
-                                <!-- TODO - change temporary images and names -->
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="row" data-bs-toggle="modal" data-bs-target="#">
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex1" src="../images/content/ex1.jpg">
-                                                        </a>
+                <div id="pos-4">
+                    <div class="container"> 
+                        <h3 class="mt-3 mb-2 text-white">Documentários</h3>
+                        <div class="row">
+                            <div class="col-16 mb-3">
+                                <button class="btn btn-dark me-3 btn-line" type="button" data-bs-target="#carousel-documentaries" data-bs-slide="prev">
+                                    <i class="bi bi-arrow-left-circle"></i>
+                                </button>
+                                <button class="btn btn-dark btn-line" type="button" data-bs-target="#carousel-documentaries" data-bs-slide="next">
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </button>
+                            </div>
+                            <div class="col-16">
+                                <div id="carousel-documentaries" class="carousel slide" data-ride="carousel">
+                                    <!-- TODO - change temporary images and names -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex1" src="../images/content/ex1.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 1</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 1</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex2" src="../images/content/ex2.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex2" src="../images/content/ex2.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 2</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 2</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex3" src="../images/content/ex3.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex3" src="../images/content/ex3.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 3</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 3</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex4" src="../images/content/ex4.jpg">
-                                                        </a>
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex4" src="../images/content/ex4.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 4</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 4</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
-                                            </div>
-                                        </div>            
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-md-3 mb-3">
-                                                <div class="card border-0 bg-dark">
-                                                    <div class="card-img-bg-color">
-                                                        <a href="#">
-                                                            <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex5" src="../images/content/ex5.jpg">
-                                                        </a>
+                                            </div>            
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="card border-0 bg-dark">
+                                                        <div class="card-img-bg-color">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex5" src="../images/content/ex5.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 5</b></p>
+                                                        <p class="ms-4 text-white" style="opacity: 0.5;">
+                                                            <b>2022</b> ● <b>190 minutos</b>
+                                                        </p>
                                                     </div>
-                                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>Example 5</b></p>
-                                                    <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                        <b>2022</b> ● <b>190 minutos</b>
-                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>                        
+                        </div>                        
+                    </div>
                 </div>
             </section>
         </main>
 
+        <script src="../javascript/draggable-sections.js"></script>
         <script src="../javascript/libs/bootstrap.bundle.js"></script>
     </body>
 </html>

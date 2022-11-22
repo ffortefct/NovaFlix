@@ -1,0 +1,7 @@
+.drag-item {
+    cursor: move;
+}
+
+.dead-content {
+    pointer-events: none;
+}
