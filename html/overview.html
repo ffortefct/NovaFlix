@@ -14,18 +14,19 @@
     <body>
         <!-- Navigation Bar -->
         <header>
-            <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+            <nav class="navbar navbar-expand-xxl navbar-dark bg-dark fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="../images/favicon.ico" alt="Bootstrap" width="30" height="24" style="margin-bottom: +4px;">
+                        <img class="d-inline-block align-text-top" src="../images/favicon.ico" alt="Bootstrap" width="30" height="24">
                     </a>
-                    <a class="navbar-brand me-5" href="#" style="margin-bottom: +3px; opacity: 0.5;">NovaFlix</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nf-bar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-brand" href="#" style="opacity: 0.5;">NovaFlix</a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nf-bar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
                     </button>
                     <!-- Main pages -->
                     <div class="collapse navbar-collapse ms-4" id="nf-bar">
-                        <ul class="navbar-nav mb-2 me-auto mb-md-0">
+                        <!-- Sections (non-collapsed version) -->
+                        <ul class="navbar-nav mb-2 me-auto mb-md-0 d-xxl-flex d-none">
                             <!-- TODO link remaining pages -->
                             <li class="nav-item me-4"><a class="nav-link" href="#">Filmes</a></li>
                             <li class="nav-item me-4"><a class="nav-link" href="#">Séries</a></li>
@@ -33,18 +34,39 @@
                             <li class="nav-item me-4"><a class="nav-link" href="#">Minha Lista</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Sugestões</a></li>
                         </ul>
-                        <!-- Simple search bar -->
-                        <form class="d-flex me-4" role="search" action="search-results.html">
-                            <input name="search" class="form-control me-2 rounded-4" type="search" placeholder="Pesquisa" aria-label="Search">
+                        <!-- Sections (collapsed version) -->
+                        <ul class="navbar-nav mb-2 me-auto mb-md-0 d-xxl-none d-flex">
+                            <!-- TODO link remaining pages -->
+                            <li class="nav-item me-4"><a class="nav-link text-decoration-underline" href="#">Filmes</a></li>
+                            <li class="nav-item me-4"><a class="nav-link text-decoration-underline" href="#">Séries</a></li>
+                            <li class="nav-item me-4"><a class="nav-link text-decoration-underline" href="#">Documentários</a></li>
+                            <li class="nav-item me-4"><a class="nav-link text-decoration-underline" href="#">Minha Lista</a></li>
+                            <li class="nav-item"><a class="nav-link text-decoration-underline" href="#">Sugestões</a></li>
+                        </ul>
+                        <!-- Search bar -->
+                        <form class="d-xxl-flex d-none me-5" role="search" action="search-results.html">
+                            <input style="width:330px !important;" name="search" class="form-control me-2 rounded-4" type="search" placeholder="Pesquisa" aria-label="Search">
                             <button class="btn btn-dark" type="submit">
                                 <i class="bi bi-search"></i>
                             </button>
                         </form>
-                        <ul class="navbar-nav">
+                        <!-- User sections (non-collapsed version) -->
+                        <div class="btn-group drop-start d-xxl-flex d-none ms-3">
+                            <button class="btn btn-dark dropdown-toggle ms-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="d-inline-block align-text-top rounded-circle" src="../images/user.png" alt="" width="24" height="24">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" style="transform: translate(-35%, 15%);">
+                              <li><a class="dropdown-item" href="#"><i class="bi bi-magic me-2"></i>Perfil</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Conta</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="bi bi-door-closed me-2"></i>Sair</a></li>
+                            </ul>
+                          </div>
+                        <!-- User sections (collapsed version) -->
+                        <ul class="navbar-nav d-xxl-none d-block">
                             <!-- Replace page links  -->
-                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-magic"></i>&nbspPerfil</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-gear"></i>&nbspConta</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-door-closed"></i>&nbspSair</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-magic me-2"></i>Perfil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-gear me-2"></i>Conta</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-door-closed me-2"></i>Sair</a></li>
                         </ul>
                     </div>
                 </div>
@@ -581,7 +603,7 @@
             </section>
         </main>
 
-        <script src="../javascript/draggable-sections.js"></script>
         <script src="../javascript/libs/bootstrap.bundle.js"></script>
+        <script src="../javascript/draggable-sections.js"></script>
     </body>
 </html>
