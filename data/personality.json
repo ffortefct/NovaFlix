@@ -1,5 +1,6 @@
 {
     "Sam Worthington" : {
+        "photo" : "samWorthington.jpg",
         "type" : "Actor",
         "fullName" : "Samuel Henry John Worthington",
         "birthday" : "2 de Agosto de 1976",
@@ -7,6 +8,7 @@
         "profile" : "avatar-profile.jpg"
     },
     "Zoe Saldana" : {
+        "photo" : "zoeSaldana.jpg",
         "type" : "Atriz",
         "fullName" : "Zoe Saldana-Perego",
         "birthday" : "19 de junho de 1978",
@@ -14,6 +16,7 @@
         "profile" : "avatar-profile.jpg"
     },
     "James Cameron" : {
+        "photo" : "jamesCameron.jpg",
         "type" : "Director",
         "fullName" : "James Francis Cameron",
         "birthday" : "16 de agosto de 1954",
@@ -22,6 +25,7 @@
     },
 
     "Marlon Brando" : {
+        "photo" : "marlonBrando.jpg",
         "type" : "Actor",
         "fullName" : "Marlon Brando Jr.",
         "birthday" : "3 de abril de 1924",
@@ -29,6 +33,7 @@
         "profile" : "the-godfather-profile.jpg"
     },
     "Al Pacino" : {
+        "photo" : "alPacino.jpg",
         "type" : "Actor",
         "fullName" : "Alfredo James Pacino",
         "birthday" : "25 de abril de 1940",
@@ -36,6 +41,7 @@
         "profile" : "the-godfather-profile.jpg"
     },
     "Francis Coppola" : {
+        "photo" : "francisCoppola.jpg",
         "type" : "Director",
         "fullName" : "Francis Ford Coppola",
         "birthday" : "7 de Abril de 1939",
@@ -44,6 +50,7 @@
     },
 
     "Matthew McConaughey" : {
+        "photo" : "matthewMcConaughey.jpg",
         "type" : "Actor",
         "fullName" : "Matthew David McConaughey",
         "birthday" : "4 de novembro de 1969",
@@ -51,6 +58,7 @@
         "profile" : "interstellar-profile.jpg"
     },
     "Anne Hathaway" : {
+        "photo" : "anneHathaway.jpg",
         "type" : "Atriz",
         "fullName" : "Anne Jacqueline Hathaway",
         "birthday" : "12 de novembro de 1982",
@@ -58,6 +66,7 @@
         "profile" : "interstellar-profile.jpg"
     },
     "Christopher Nolan" : {
+        "photo" : "christopherNolan.jpg",
         "type" : "Director",
         "fullName" : "Christopher Nolan",
         "birthday" : "30 de julho de 1970",
@@ -66,6 +75,7 @@
     },
 
     "Dolores Aveiro" : {
+        "photo" : "doloresAveiro.jpg",
         "type" : "Mãe do Ronaldo",
         "fullName" : "Dolores Aveiro",
         "birthday" : "4 de novembro de 1969",
@@ -73,6 +83,7 @@
         "profile" : "reinaldo-profile.jpg"
     },
     "Ronaldo" : {
+        "photo" : "cristianoRonaldo.jpg",
         "type" : "Actor",
         "fullName" : "Cristiano Ronaldo dos Santos Aveiro",
         "birthday" : "5 de fevereiro de 1985",
@@ -80,6 +91,7 @@
         "profile" : "reinaldo-profile.jpg"
     },
     "Anthony Wonke" : {
+        "photo" : "anthonyWonke.jpg",
         "type" : "Director",
         "fullName" : "Anthony Wonke",
         "birthday" : "30 de julho de 1970",
@@ -88,13 +100,15 @@
     },
 
     "Pedro Alonso" : {
+        "photo" : "pedroAlonso.jpg",
         "type" : "Actor",
         "fullName" : "Pedro González Alonso",
         "birthday" : "21 de junho de 1971",
         "bibliography" : "Ele é formado pela Real Escola de Arte Dramática e também estudou teatro e dança.",
         "profile" : "lcdp-profile.jpg"
     },
-    "Álvaro Morte" : {
+    "Álvaro Morte" : {        
+        "photo" : "alvaroMorte.jpg",
         "type" : "Actor",
         "fullName" : "Álvaro Antonio García Pérez",
         "birthday" : "5 de fevereiro de 1985",
@@ -102,6 +116,7 @@
         "profile" : "lcdp-profile.jpg"
     },
     "Luis Alfaro" : {
+        "photo" : "luisAlfaro.jpg",
         "type" : "Director",
         "fullName" : "Luis Alfaro",
         "birthday" : "desconhecido",
@@ -109,14 +124,16 @@
         "profile" : "lcdp-profile.jpg"
     },
 
-    "Al Gore" : {
+    "Al Gore" : {        
+        "photo" : "alGore.jpg",
         "type" : "Actor",
         "fullName" : "Al Gore",
         "birthday" : "21 de junho de 1971",
         "bibliography" : "Ele é formado pela Real Escola de Arte Dramática e também estudou teatro e dança.",
         "profile" : "inconvenient-profile.jpg"
     },
-    "Billy West" : {
+    "Billy West" : {   
+        "photo" : "billyWest.jpg",
         "type" : "Actor",
         "fullName" : "William Richard West",
         "birthday" : "16 de abril de 1952",
@@ -124,6 +141,7 @@
         "profile" : "inconvenient-profile.jpg"
     },
     "Davis Guggenheim" : {
+        "photo" : "davisGuggenheim.jpg",
         "type" : "Director",
         "fullName" : "Davis Guggenheim",
         "birthday" : "desconhecido",
@@ -132,6 +150,7 @@
     },
 
     "Eric McCormack" : {
+        "photo" : "ericMcCormack.jpg",
         "type" : "Actor",
         "fullName" : "Eric McCormack",
         "birthday" : "21 de agosto de 1951",
@@ -139,6 +158,7 @@
         "profile" : "travelers-profile.jpg"
     },
     "MacKenzie Porter" : {
+        "photo" : "macKenziePorter.jpg",
         "type" : "Actor",
         "fullName" : "MacKenzie Porter",
         "birthday" : "16 de setembro de 1952",
@@ -146,6 +166,7 @@
         "profile" : "travelers-profile.jpg"
     },
     "Brad Wright" : {
+        "photo" : "bradWright.jpg",
         "type" : "Director",
         "fullName" : "Brad Wright",
         "birthday" : "16 de setembro de 1952",
@@ -154,6 +175,7 @@
     },
 
     "Jeff Bridges" : {
+        "photo" : "jeffBridges.jpg",
         "type" : "Actor",
         "fullName" : "Jeff Bridges",
         "birthday" : "21 de janeiro de 1951",
@@ -161,6 +183,7 @@
         "profile" : "tom-profile.jpg"
     },
     "John Lithgow" : {
+        "photo" : "johnLithgow.jpg",
         "type" : "Actor",
         "fullName" : "John Lithgow",
         "birthday" : "16 de abril de 1952",
@@ -168,6 +191,7 @@
         "profile" : "tom-profile.jpg"
     },
     "Robert Levine" : {
+        "photo" : "robertLevine.jpg",
         "type" : "Director",
         "fullName" : "Robert Levine",
         "birthday" : "5 de dezembro de 1952",
@@ -176,6 +200,7 @@
     },
 
     "Tom Sturridge" : {
+        "photo" : "tomSturridge.jpg",
         "type" : "Actor",
         "fullName" : "Tom Sturridge",
         "birthday" : "1 de janeiro de 1951",
@@ -183,6 +208,7 @@
         "profile" : "sandman-profile.jpg"
     },
     "Boyd Holbrook" : {
+        "photo" : "boydHolbrook.jpg",
         "type" : "Actor",
         "fullName" : "Boyd Holbrook",
         "birthday" : "3 de abril de 1952",
@@ -190,6 +216,7 @@
         "profile" : "sandman-profile.jpg"
     },
     "Neil Gaiman" : {
+        "photo" : "neilGaiman.jpg",
         "type" : "Director",
         "fullName" : "Neil Gaiman",
         "birthday" : "23 de dezembro de 1952",
