@@ -28,8 +28,8 @@ function genSearch() {
                         <div class="col">
                             <div class="card border-0 bg-dark">
                                 <div class="card-img-bg-color">
-                                    <a href="./film.html?name=${contentName}">
-                                        <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="" src="../images/content/${contentAttrs.image}">
+                                    <a href="#">
+                                        <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="" src="../images/content/${contentAttrs.category}/${contentAttrs.landscape}">
                                     </a>
                                 </div>
                                 <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${contentName}</b></p>

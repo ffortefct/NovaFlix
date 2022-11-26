@@ -5,18 +5,26 @@
         "director": "...",
         "description" : "...",
         "evaluation" : ..., / e.g. 0.0 <= evaluation <= 5.0
+        "profile" : "...",
+        "landscape" : "...",
     },
     "series_name" : {
         "director": "...",
+        "cast": ["...", ...],
         "description" : "...",
         "evaluation" : ..., / e.g. 0.0 <= evaluation <= 5.0
-        "episodes" : [
-            {
-                "duration": ..., // e.g. 180
-                "cast": ["...", ...],
-                "description" : "...",
-            }
-            ...
+        "profile" : "...",
+        "landscape" : "...",
+        "seasons" : [
+            [ // episodes
+                {
+                    "name" : "..."
+                    "duration" : ..., // e.g. 180
+                    "landscape" : "...",
+                },
+                ...
+            ],
+
         ]
     },
     ...

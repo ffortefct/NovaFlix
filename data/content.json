@@ -1,10 +1,176 @@
 {
-    "Inception" : {
-        "duration": 148,
-        "cast": ["Leonardo DiCaprio ", "Joseph Gordon-Levitt ", "Elliot Page"],
+    "Avatar" : {
+        "name" : "Avatar",
+        "duration": 162,
+        "cast": ["Sam Worthington ", "Zoe Saldana ", "Stephen Lang"],
+        "director": "James Cameron",
+        "description" : "Jake Sully (Sam Worthington) ficou paraplégico após um combate na Terra. Ele é selecionado para participar do programa Avatar em substituição ao seu irmão gémeo, falecido. Jake viaja a Pandora, uma lua extraterrestre, onde encontra diversas e estranhas formas de vida. O local é também o lar dos Na Vi, seres humanóides que, apesar de primitivos, possuem maior capacidade física que os humanos. Os Na Vi têm três metros de altura, pele azulada e vivem em paz com a natureza de Pandora.",
+        "evaluation" : 4.5,
+        "profile" : "avatar-profile.jpeg",
+        "landscape" : "avatar.jpg",
+        "category" : "film"
+    },
+    "The Godfather" : {
+        "name" : "The Godfather",
+        "duration": 175,
+        "cast": ["Marlon Brando", "Al Pacino", "James Caan"],
+        "director": "Francis Ford Coppola",
+        "description" : "O patriarca de uma dinastia de crime organizado transfere o controlo do crime do seu império clandestino para seu filho relutante.", 
+        "evaluation": 4.9,
+        "profile" : "the-godfather-profile.jpg",
+        "landscape" : "the-godfather.jpg",
+        "category" : "film"
+    },
+    "Interstellar" : {
+        "name" : "Interstellar",
+        "duration": 169,
+        "cast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
         "director": "Christopher Nolan",
-        "description" : "Um ladrão que rouba segredos corporativos por meio do uso de tecnologia de compartilhamento de sonho é dada a tarefa inversa de plantar uma ideia na mente de um CEO.",
-        "evaluation" : 4.9,
-        "image" : "ex1.jpg"
+        "description" : "Com o nosso tempo no planeta Terra a aproximar-se do fim, uma equipa de exploradores é enviada na missão mais importante da história da humanidade: viajar para além da nossa galáxia para descobrir se a humanidade tem futuro entre as estrelas.", 
+        "evaluation": 5.0,
+        "profile" : "interstellar-profile.jpg",
+        "landscape" : "interstellar.jpg",
+        "category" : "film"
+    },
+
+    "Ronaldo" : {
+        "name" : "Ronaldo",
+        "duration": 92,
+        "cast": ["Dolores Aveiro", "Lionel Messi", "Reinaldo"],
+        "director": "Anthony Wonke",
+        "description" : "De um jovem sonhador na Ilha da Madeira a craque do Real Madrid e três vezes eleito o melhor jogador do mundo, Cristiano Ronaldo, um atleta talentoso e obsessivo pela vitória que ganha seu documentário definitivo nesse filme dos mesmos realizadores de Senna e Amy.", 
+        "evaluation": 4.8,
+        "profile" : "reinaldo-profile.jpg",
+        "landscape" : "reinaldo.jpg",
+        "category" : "documentary"
+    },
+    "La Casa De Papel: Bastidores" : {
+        "name" : "La Casa De Papel: Bastidores",
+        "duration": 57,
+        "cast": ["Pedro Alonso", "Álvaro Morte", "Alba Flores"],
+        "director": "Luis Alfaro",
+        "description" : "Um documentário sobre os motivos de La casa de papel ter provocado uma onda de entusiasmo por todo o mundo em relação a um adorável grupo de ladrões e ao seu professor.", 
+        "evaluation": 3.4,
+        "profile" : "lcdp-profile.jpg",
+        "landscape" : "lcdp.jpg",
+        "category" : "documentary"
+    },
+    "An Inconvenient Truth" : {
+        "name" : "An Inconvenient Truth",
+        "duration": 90,
+        "cast": ["Al Gore", "Billy West"],
+        "director": "Davis Guggenheim",
+        "description" : "A Humanidade está a repousar numa bomba relógio. Se a grande maioria dos cientistas mundiais tiverem razão, temos apenas 10 anos para evitar uma grande catástrofe, a qual pode destruir o nosso planeta com condições meteorológicas agressivas, inundações, epidemias e ondas de calor que ultrapassam tudo o que já passámos.", 
+        "evaluation": 4.4,
+        "profile" : "inconvenient-profile.jpg",
+        "landscape" : "inconvenient.jpg",
+        "category" : "documentary"
+    },
+
+    "Travelers" : {
+        "name" : "Travelers",
+        "cast": ["Eric McCormack", "MacKenzie Porter", "Reilly Dolman", "Jared Abrahamson"],
+        "director": "Brad Wright",
+        "description" : "Pessoas que aparentemente não tinham conexões diretas entre si começam a se encontrar em segredo e formar equipes com propósitos desconhecidos. Na verdade, seus corpos foram ocupados por consciências de agentes do futuro, que voltaram no tempo para tentar impedir o futuro desastroso do planeta. Entretanto, os cinco encontrarão diversos obstáculos em sua missão, principalmente o jeito de viver e se relacionar no século XXI.", 
+        "evaluation": 4.9,
+        "profile" : "travelers-profile.jpg",
+        "landscape" : "travelers.jpg",
+        "category" : "series",
+        "seasons": [
+            [
+                {
+                    "name" : "Travelers",
+                    "duration" : 45, 
+                    "landscape" : "travelers-s1-p1.jpg"
+                },
+                {
+                    "name" : "Protocol 6",
+                    "duration" : 45, 
+                    "landscape" : "travelers-s1-p2.jpg"
+                }
+            ],
+            [
+                {
+                    "name" : "Ave Machina",
+                    "duration" : 44, 
+                    "landscape" : "travelers-s2-p1.jpg"
+                },
+                {
+                    "name" : "Protocol 4",
+                    "duration" : 45, 
+                    "landscape" : "travelers-s2-p2.jpg"
+                }
+            ],
+            [
+                {
+                    "name" : "Ilsa",
+                    "duration" : 46, 
+                    "landscape" : "travelers-s3-p1.jpg"
+                }
+            ]
+        ]
+    },
+    "The Old Man" : {
+        "name" : "The Old Man",
+        "cast": ["Jeff Bridges", "John Lithgow", "E.J. Bonilla"],
+        "director": "Robert Levine",
+        "description" : "Um ex-oficial da CIA, que já vive fora da rede, agora deve fugir de pessoas que querem matá-lo.", 
+        "evaluation": 4.8,
+        "profile" : "tom-profile.jpg",
+        "landscape" : "tom.jpg",
+        "category" : "series",
+        "seasons": [
+            [
+                {
+                    "name" : "I",
+                    "duration" : 62, 
+                    "landscape" : "tom-s1-p1.jpg"
+                },
+                {
+                    "name" : "II",
+                    "duration" : 62, 
+                    "landscape" : "tom-s1-p2.jpg"
+                },
+                {
+                    "name" : "III",
+                    "duration" : 62, 
+                    "landscape" : "tom-s1-p3.jpg"
+                },
+                {
+                    "name" : "IV",
+                    "duration" : 62, 
+                    "landscape" : "tom-s1-p4.jpg"
+                }
+            ]
+        ]
+    },
+    "The Sandman" : {
+        "name" : "The Sandman",
+        "cast": ["Tom Sturridge", "Boyd Holbrook", "Patton Oswalt"],
+        "director": "Neil Gaiman",
+        "description" : "Adaptação da famosa série de comics Sandman de Neil Gaiman, que acompanha as aventuras de Morpheus, também conhecido como “Dream” (entre outros nomes), o mestre dos sonhos e membro de um panteão de sete seres imortais chamados de “Endless” que personificam certos conceitos universais como o Destino, Morte, Desejo, Desespero, Delírio e Destruição.", 
+        "evaluation": 4.7,
+        "profile" : "sandman-profile.jpg",
+        "landscape" : "sandman.jpg",
+        "category" : "series",
+        "seasons": [
+            [
+                {
+                    "name" : "Sleep of the Just",
+                    "duration" : 54, 
+                    "landscape" : "sandman-s1-p1.jpg"
+                },
+                {
+                    "name" : "Imperfect Hosts",
+                    "duration" : 37, 
+                    "landscape" : "sandman-s1-p2.jpg"
+                },
+                {
+                    "name" : "Dream a Little Dream of Me",
+                    "duration" : 46, 
+                    "landscape" : "sandman-s1-p3.jpg"
+                }
+            ]
+        ]
     }
 }
