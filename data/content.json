@@ -8,7 +8,7 @@
         "evaluation" : 4.5,
         "profile" : "avatar-profile.jpeg",
         "landscape" : "avatar.jpg",
-        "category" : "film"
+        "category" : "films"
     },
     "The Godfather" : {
         "name" : "The Godfather",
@@ -19,7 +19,7 @@
         "evaluation": 4.9,
         "profile" : "the-godfather-profile.jpg",
         "landscape" : "the-godfather.jpg",
-        "category" : "film"
+        "category" : "films"
     },
     "Interstellar" : {
         "name" : "Interstellar",
@@ -30,7 +30,7 @@
         "evaluation": 5.0,
         "profile" : "interstellar-profile.jpg",
         "landscape" : "interstellar.jpg",
-        "category" : "film"
+        "category" : "films"
     },
 
     "Ronaldo" : {
@@ -38,11 +38,11 @@
         "duration": 92,
         "cast": ["Dolores Aveiro", "Ronaldo"],
         "director": "Anthony Wonke",
-        "description" : "De um jovem sonhador na Ilha da Madeira a craque do Real Madrid e três vezes eleito o melhor jogador do mundo, Cristiano Ronaldo, um atleta talentoso e obsessivo pela vitória que ganha seu documentário definitivo nesse filme dos mesmos realizadores de Senna e Amy.", 
+        "description" : "De um jovem sonhador na Ilha da Madeira a craque do Real Madrid e três vezes eleito o melhor jogador do mundo, Cristiano Ronaldo, um atleta talentoso e obsessivo pela vitória que ganha seu documentário definitivo nesse filmse dos mesmos realizadores de Senna e Amy.", 
         "evaluation": 4.8,
         "profile" : "reinaldo-profile.jpg",
         "landscape" : "reinaldo.jpg",
-        "category" : "documentary"
+        "category" : "documentaries"
     },
     "La Casa De Papel: Bastidores" : {
         "name" : "La Casa De Papel: Bastidores",
@@ -53,7 +53,7 @@
         "evaluation": 3.4,
         "profile" : "lcdp-profile.jpg",
         "landscape" : "lcdp.jpg",
-        "category" : "documentary"
+        "category" : "documentaries"
     },
     "An Inconvenient Truth" : {
         "name" : "An Inconvenient Truth",
@@ -64,7 +64,7 @@
         "evaluation": 4.4,
         "profile" : "inconvenient-profile.jpg",
         "landscape" : "inconvenient.jpg",
-        "category" : "documentary"
+        "category" : "documentaries"
     },
 
     "Travelers" : {
