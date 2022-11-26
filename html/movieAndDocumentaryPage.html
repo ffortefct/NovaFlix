@@ -135,8 +135,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary" onclick="setCommit()">Submeter</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="setCommit()">Submeter</button>
                     </div>
                 </div>
             </div>
@@ -295,15 +294,21 @@
         function setCommit() {
             let comments = document.getElementById('comments')
 
-            let comment = document.getElementById('text-comment').value;
+            let comment = null
 
-            comments.innerHTML += `<div class="card text-bg-dark mb-3">
+            comment = document.getElementById('text-comment').value;
+
+            if (comment.length != 0) {
+                comments.innerHTML += `<div class="card text-bg-dark mb-3">
                                         <div class="card-body">
                                             <h5 class="card-title">Pai</h5>
                                             <p class="card-text">${comment}</p>
                                             <small class="text-muted">10 de abril 2022</small>
                                         </div>
                                     </div>`
+            }
+
+            
 
             
         }
