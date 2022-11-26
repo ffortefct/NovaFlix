@@ -102,11 +102,13 @@
                 {
                     "name" : "Travelers",
                     "duration" : 45, 
+                    "ano": 2016,
                     "landscape" : "travelers-s1-p1.jpg"
                 },
                 {
                     "name" : "Protocol 6",
                     "duration" : 45, 
+                    "ano": 2016,
                     "landscape" : "travelers-s1-p2.jpg"
                 }
             ],
@@ -114,18 +116,21 @@
                 {
                     "name" : "Ave Machina",
                     "duration" : 44, 
+                    "ano": 2017,
                     "landscape" : "travelers-s2-p1.jpg"
                 },
                 {
                     "name" : "Protocol 4",
                     "duration" : 45, 
+                    "ano": 2017,
                     "landscape" : "travelers-s2-p2.jpg"
                 }
             ],
             [
                 {
                     "name" : "Ilsa",
-                    "duration" : 46, 
+                    "duration" : 46,
+                    "ano": 2018, 
                     "landscape" : "travelers-s3-p1.jpg"
                 }
             ]
@@ -147,21 +152,25 @@
             [
                 {
                     "name" : "I",
+                    "ano": 2022,
                     "duration" : 62, 
                     "landscape" : "tom-s1-p1.jpg"
                 },
                 {
                     "name" : "II",
+                    "ano": 2022,
                     "duration" : 62, 
                     "landscape" : "tom-s1-p2.jpg"
                 },
                 {
                     "name" : "III",
+                    "ano": 2022,
                     "duration" : 62, 
                     "landscape" : "tom-s1-p3.jpg"
                 },
                 {
                     "name" : "IV",
+                    "ano": 2022,
                     "duration" : 62, 
                     "landscape" : "tom-s1-p4.jpg"
                 }
@@ -184,16 +193,19 @@
             [
                 {
                     "name" : "Sleep of the Just",
+                    "ano": 2022,
                     "duration" : 54, 
                     "landscape" : "sandman-s1-p1.jpg"
                 },
                 {
                     "name" : "Imperfect Hosts",
+                    "ano": 2022,
                     "duration" : 37, 
                     "landscape" : "sandman-s1-p2.jpg"
                 },
                 {
                     "name" : "Dream a Little Dream of Me",
+                    "ano": 2022,
                     "duration" : 46, 
                     "landscape" : "sandman-s1-p3.jpg"
                 }
