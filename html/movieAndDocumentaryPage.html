@@ -114,7 +114,7 @@
 
         </div>
 
-        <button type="button" class="btn btn-dark m-5" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="setCommit()">
+        <button type="button" class="btn btn-dark m-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="bi bi-plus-circle"></i>
             Adicionar comentário
         </button>
@@ -130,13 +130,13 @@
                         <form>
                             <div class="mb-3">
                                 <label for="message-text" class="col-form-label">Comentário:</label>
-                                <textarea class="form-control" id="comment"></textarea>
+                                <textarea class="form-control" id="text-comment"></textarea>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary">Submeter</button>
+                        <button type="button" class="btn btn-primary" onclick="setCommit()">Submeter</button>
                     </div>
                 </div>
             </div>
@@ -293,16 +293,14 @@
         }
 
         function setCommit() {
-            var comments = document.getElementById('comments')
+            let comments = document.getElementById('comments')
 
-            let comment = document.getElementById('comment').value;
-
-           console.log(comment)
+            let comment = document.getElementById('text-comment').value;
 
             comments.innerHTML += `<div class="card text-bg-dark mb-3">
                                         <div class="card-body">
                                             <h5 class="card-title">Pai</h5>
-                                            <p class="card-text">` + comment + `</p>
+                                            <p class="card-text">${comment}</p>
                                             <small class="text-muted">10 de abril 2022</small>
                                         </div>
                                     </div>`
