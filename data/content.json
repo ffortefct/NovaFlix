@@ -11,7 +11,7 @@
         "evaluation" : 4.5,
         "profile" : "avatar-profile.jpeg",
         "landscape" : "avatar.jpg",
-        "category" : "film"
+        "category" : "films"
     },
     "The Godfather" : {
         "name" : "The Godfather",
@@ -25,7 +25,7 @@
         "evaluation": 4.9,
         "profile" : "the-godfather-profile.jpg",
         "landscape" : "the-godfather.jpg",
-        "category" : "film"
+        "category" : "films"
     },
     "Interstellar" : {
         "name" : "Interstellar",
@@ -39,7 +39,7 @@
         "evaluation": 5.0,
         "profile" : "interstellar-profile.jpg",
         "landscape" : "interstellar.jpg",
-        "category" : "film"
+        "category" : "films"
     },
 
     "Ronaldo" : {
@@ -54,7 +54,7 @@
         "evaluation": 4.8,
         "profile" : "reinaldo-profile.jpg",
         "landscape" : "reinaldo.jpg",
-        "category" : "documentary"
+        "category" : "documentaries"
     },
     "La Casa De Papel: Bastidores" : {
         "name" : "La Casa De Papel: Bastidores",
@@ -68,7 +68,7 @@
         "evaluation": 3.4,
         "profile" : "lcdp-profile.jpg",
         "landscape" : "lcdp.jpg",
-        "category" : "documentary"
+        "category" : "documentaries"
     },
     "An Inconvenient Truth" : {
         "name" : "An Inconvenient Truth",
@@ -82,7 +82,7 @@
         "evaluation": 4.4,
         "profile" : "inconvenient-profile.jpg",
         "landscape" : "inconvenient.jpg",
-        "category" : "documentary"
+        "category" : "documentaries"
     },
 
     "Travelers" : {

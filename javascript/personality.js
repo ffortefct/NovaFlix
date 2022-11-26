@@ -19,6 +19,18 @@ function genPersonality() {
         document.getElementById('pfname').innerHTML = person.fullName;
         document.getElementById('pbirthday').innerHTML = person.birthday;
         document.getElementById('pbibliography').innerHTML = person.bibliography;
+
+        let category = person.content
+        
+        if (category == 'films') {
+            document.getElementById('pfilms').src = "../images/content/" + category + "/" + person.profile;
+        } 
+        else if (category == 'series') {
+            document.getElementById('pseries').src = "../images/content/" + category + "/" + person.profile;
+        }
+        else {
+            document.getElementById('pdocumentaries').src = "../images/content/" + category + "/" + person.profile;
+        }
     });
 }
 
