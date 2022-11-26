@@ -14,6 +14,7 @@ function genMovieDoc() {
         .then((json) => {
             let content = json[name]
             
+            document.getElementById('myear').innerHTML = content.ano;
             document.getElementById('mduration').innerHTML = content.duration;
             document.getElementById('rating').innerHTML = content.evaluation;
             document.getElementById('mprofile').src = "../images/content/" + content.category + "/" + content.profile;
