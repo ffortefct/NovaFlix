@@ -2,6 +2,7 @@
     "Avatar" : {
         "name" : "Avatar",
         "duration": 162,
+        "ano": 2009,
         "cast": ["Sam Worthington ", "Zoe Saldana"],
         "director": "James Cameron",
         "produtor": "James Cameron",
@@ -15,6 +16,7 @@
     "The Godfather" : {
         "name" : "The Godfather",
         "duration": 175,
+        "ano": 1972,
         "cast": ["Marlon Brando", "Al Pacino"],
         "director": "Francis Ford Coppola",
         "produtor": "Francis Ford Coppola",
@@ -28,6 +30,7 @@
     "Interstellar" : {
         "name" : "Interstellar",
         "duration": 169,
+        "ano": 2014,
         "cast": ["Matthew McConaughey", "Anne Hathaway"],
         "director": "Christopher Nolan",
         "produtor": "Christopher Nolan",
@@ -42,6 +45,7 @@
     "Ronaldo" : {
         "name" : "Ronaldo",
         "duration": 92,
+        "ano": 2015,
         "cast": ["Dolores Aveiro", "Ronaldo"],
         "director": "Anthony Wonke",
         "produtor": "Anthony Wonken",
@@ -55,6 +59,7 @@
     "La Casa De Papel: Bastidores" : {
         "name" : "La Casa De Papel: Bastidores",
         "duration": 57,
+        "ano": 2018,
         "cast": ["Pedro Alonso", "Álvaro Morte"],
         "director": "Luis Alfaro",
         "produtor": "Luis Alfaro",
@@ -68,6 +73,7 @@
     "An Inconvenient Truth" : {
         "name" : "An Inconvenient Truth",
         "duration": 90,
+        "ano": 2006,
         "cast": ["Al Gore", "Billy West"],
         "director": "Davis Guggenheim",
         "produtor": "Davis Guggenheim",
@@ -81,6 +87,7 @@
 
     "Travelers" : {
         "name" : "Travelers",
+        "ano": 2016,
         "cast": ["Eric McCormack", "MacKenzie Porter"],
         "director": "Brad Wright",
         "produtor": "Brad Wright",
@@ -126,6 +133,7 @@
     },
     "The Old Man" : {
         "name" : "The Old Man",
+        "ano": 2022,
         "cast": ["Jeff Bridges", "John Lithgow"],
         "director": "Robert Levine",
         "produtor": "Robert Levine",
@@ -161,6 +169,7 @@
         ]
     },
     "The Sandman" : {
+        "ano": 2022,
         "name" : "The Sandman",
         "cast": ["Tom Sturridge", "Boyd Holbrook"],
         "director": "Neil Gaiman",
