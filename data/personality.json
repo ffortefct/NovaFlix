@@ -1,0 +1,199 @@
+{
+    "Sam Worthington" : {
+        "type" : "Actor",
+        "fullName" : "Samuel Henry John Worthington",
+        "birthday" : "2 de Agosto de 1976",
+        "bibliography" : "Se tornou conhecido principalmente por seus papéis no cinema como Jake Sully no premiado Avatar, Marcus Wright em Terminator Salvation e como Perseu no remake de 2010 Clash of the Titans.",
+        "profile" : "avatar-profile.jpg"
+    },
+    "Zoe Saldana" : {
+        "type" : "Atriz",
+        "fullName" : "Zoe Saldana-Perego",
+        "birthday" : "19 de junho de 1978",
+        "bibliography" : "Após apresentações com o grupo de teatro Faces, ela fez sua estreia nas telas em um episódio de Law & Order do ano de 1999. Sua carreira no cinema iniciou um ano depois com o filme Center Stage (2000), seguido por Crossroads (2002).",
+        "profile" : "avatar-profile.jpg"
+    },
+    "James Cameron" : {
+        "type" : "Director",
+        "fullName" : "James Francis Cameron",
+        "birthday" : "16 de agosto de 1954",
+        "bibliography" : "É bacharel em física pela Universidade da Califórnia e também explorador dos fundos oceânicos, tendo sido, em 26 de março de 2012, o primeiro homem a descer sozinho num batiscafo ao fundo da Fossa das Marianas.",
+        "profile" : "avatar-profile.jpg"
+    },
+
+    "Marlon Brando" : {
+        "type" : "Actor",
+        "fullName" : "Marlon Brando Jr.",
+        "birthday" : "3 de abril de 1924",
+        "bibliography" : "É saudado por trazer um estilo realista e emocionante na atuação em seus filmes, e é amplamente considerado um dos maiores e mais influentes atores de todos os tempos.",
+        "profile" : "the-godfather-profile.jpg"
+    },
+    "Al Pacino" : {
+        "type" : "Actor",
+        "fullName" : "Alfredo James Pacino",
+        "birthday" : "25 de abril de 1940",
+        "bibliography" : "É conhecido especialmente por interpretar Michael Corleone na trilogia O Poderoso Chefão e Tony Montana em Scarface. Ganhou o Oscar de Melhor Ator no 65ª Prêmio da Academia por sua atuação como Frank Slade em Perfume de Mulher. Antes de sua vitória já havia recebido sete indicações ao Oscar, incluindo uma naquele mesmo ano. ",
+        "profile" : "the-godfather-profile.jpg"
+    },
+    "Francis Coppola" : {
+        "type" : "Director",
+        "fullName" : "Francis Ford Coppola",
+        "birthday" : "7 de Abril de 1939",
+        "bibliography" : "Coppola é mais reconhecido internacionalmente por dirigir uma das mais aclamadas trilogias da história do cinema, The Godfather e clássicos como Apocalypse Now, The Conversation, Bram Stoker's Dracula, entre outros, e por escrever o roteiro do premiado Patton.",
+        "profile" : "the-godfather-profile.jpg"
+    },
+
+    "Matthew McConaughey" : {
+        "type" : "Actor",
+        "fullName" : "Matthew David McConaughey",
+        "birthday" : "4 de novembro de 1969",
+        "bibliography" : "McConaughey iniciou a sua carreira de ator em 1991 com pequenas participações em filmes e anúncios publicitários e em 1993 foi seleccionado por casting para o filme Dazed and Confused.",
+        "profile" : "interstellar-profile.jpg"
+    },
+    "Anne Hathaway" : {
+        "type" : "Atriz",
+        "fullName" : "Anne Jacqueline Hathaway",
+        "birthday" : "12 de novembro de 1982",
+        "bibliography" : "Recebedora de vários elogios, incluindo um Oscar, um Globo de Ouro e um Prêmio Primetime Emmy, ela estava entre as atrizes mais bem pagas do mundo em 2015.",
+        "profile" : "interstellar-profile.jpg"
+    },
+    "Christopher Nolan" : {
+        "type" : "Director",
+        "fullName" : "Christopher Nolan",
+        "birthday" : "30 de julho de 1970",
+        "bibliography" : "Seus dez longas-metragens já arrecadaram o equivalente a mais de 4,2 bilhões de dólares em todo o mundo, fazendo do diretor um dos mais bem-sucedidos comercialmente da moderna Hollywood.",
+        "profile" : "interstellar-profile.jpg"
+    },
+
+    "Dolores Aveiro" : {
+        "type" : "Mãe do Ronaldo",
+        "fullName" : "Dolores Aveiro",
+        "birthday" : "4 de novembro de 1969",
+        "bibliography" : "Mãe do Ronaldo.",
+        "profile" : "reinaldo-profile.jpg"
+    },
+    "Ronaldo" : {
+        "type" : "Actor",
+        "fullName" : "Cristiano Ronaldo dos Santos Aveiro",
+        "birthday" : "5 de fevereiro de 1985",
+        "bibliography" : "É o jogador com mais golos na história do futebol em jogos oficiais.",
+        "profile" : "reinaldo-profile.jpg"
+    },
+    "Anthony Wonke" : {
+        "type" : "Director",
+        "fullName" : "Anthony Wonke",
+        "birthday" : "30 de julho de 1970",
+        "bibliography" : "Seus dez longas-metragens já arrecadaram o equivalente a mais de 4,2 bilhões de dólares em todo o mundo, fazendo do diretor um dos mais bem-sucedidos comercialmente da moderna Hollywood.",
+        "profile" : "reinaldo-profile.jpg"
+    },
+
+    "Pedro Alonso" : {
+        "type" : "Actor",
+        "fullName" : "Pedro González Alonso",
+        "birthday" : "21 de junho de 1971",
+        "bibliography" : "Ele é formado pela Real Escola de Arte Dramática e também estudou teatro e dança.",
+        "profile" : "lcdp-profile.jpg"
+    },
+    "Álvaro Morte" : {
+        "type" : "Actor",
+        "fullName" : "Álvaro Antonio García Pérez",
+        "birthday" : "5 de fevereiro de 1985",
+        "bibliography" : "É o jogador com mais golos na história do futebol em jogos oficiais.",
+        "profile" : "lcdp-profile.jpg"
+    },
+    "Luis Alfaro" : {
+        "type" : "Director",
+        "fullName" : "Luis Alfaro",
+        "birthday" : "desconhecido",
+        "bibliography" : "Conhecido por The Lost City (2022), The Killer e Carta Blanca (2021)",
+        "profile" : "lcdp-profile.jpg"
+    },
+
+    "Al Gore" : {
+        "type" : "Actor",
+        "fullName" : "Al Gore",
+        "birthday" : "21 de junho de 1971",
+        "bibliography" : "Ele é formado pela Real Escola de Arte Dramática e também estudou teatro e dança.",
+        "profile" : "inconvenient-profile.jpg"
+    },
+    "Billy West" : {
+        "type" : "Actor",
+        "fullName" : "William Richard West",
+        "birthday" : "16 de abril de 1952",
+        "bibliography" : "Em 1996, West protagonizou as vozes de Pernalonga e Hortelino no filme Space Jam (1996) e também trabalhou em tempo integral no Howard Stern Show.",
+        "profile" : "inconvenient-profile.jpg"
+    },
+    "Davis Guggenheim" : {
+        "type" : "Director",
+        "fullName" : "Davis Guggenheim",
+        "birthday" : "desconhecido",
+        "bibliography" : "Director de An Inconvenient Truth",
+        "profile" : "inconvenient-profile.jpg"
+    },
+
+    "Eric McCormack" : {
+        "type" : "Actor",
+        "fullName" : "Eric McCormack",
+        "birthday" : "21 de agosto de 1951",
+        "bibliography" : "Educado e treinado como ator no Canadá na Ryerson University, McCormack aparece na televisão desde a sua estreia em 1986. ",
+        "profile" : "travelers-profile.jpg"
+    },
+    "MacKenzie Porter" : {
+        "type" : "Actor",
+        "fullName" : "MacKenzie Porter",
+        "birthday" : "16 de setembro de 1952",
+        "bibliography" : "Ela começou a estudar piano, violino e voz aos quatro anos. Mais tarde, ela viajou em uma banda com seu irmão vencedor do Canadian Idol  2004 Kalan Porter.",
+        "profile" : "travelers-profile.jpg"
+    },
+    "Brad Wright" : {
+        "type" : "Director",
+        "fullName" : "Brad Wright",
+        "birthday" : "16 de setembro de 1952",
+        "bibliography" : "Director de Travelers",
+        "profile" : "travelers-profile.jpg"
+    },
+
+    "Jeff Bridges" : {
+        "type" : "Actor",
+        "fullName" : "Jeff Bridges",
+        "birthday" : "21 de janeiro de 1951",
+        "bibliography" : "Na juventude pertenceu à Guarda Costeira dos Estados Unidos.",
+        "profile" : "tom-profile.jpg"
+    },
+    "John Lithgow" : {
+        "type" : "Actor",
+        "fullName" : "John Lithgow",
+        "birthday" : "16 de abril de 1952",
+        "bibliography" : "Arthur Lithgow era um produtor e diretor teatral que dirigia o McCarter Theatre em Princeton, New Jersey.",
+        "profile" : "tom-profile.jpg"
+    },
+    "Robert Levine" : {
+        "type" : "Director",
+        "fullName" : "Robert Levine",
+        "birthday" : "5 de dezembro de 1952",
+        "bibliography" : "Director de The Old Man",
+        "profile" : "tom-profile.jpg"
+    },
+
+    "Tom Sturridge" : {
+        "type" : "Actor",
+        "fullName" : "Tom Sturridge",
+        "birthday" : "1 de janeiro de 1951",
+        "bibliography" : "Mais conhecido por seus papéis em Being Julia, Like Minds e The Boat That Rocked.",
+        "profile" : "sandman-profile.jpg"
+    },
+    "Boyd Holbrook" : {
+        "type" : "Actor",
+        "fullName" : "Boyd Holbrook",
+        "birthday" : "3 de abril de 1952",
+        "bibliography" : "É um ator e modelo americano. Seus trabalhos mais notáveis foram como Steve Murphy, agente da DEA, em Narcos.",
+        "profile" : "sandman-profile.jpg"
+    },
+    "Neil Gaiman" : {
+        "type" : "Director",
+        "fullName" : "Neil Gaiman",
+        "birthday" : "23 de dezembro de 1952",
+        "bibliography" : "Director de The Sandman",
+        "profile" : "sandman-profile.jpg"
+    }
+}
