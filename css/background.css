@@ -1,0 +1,15 @@
+body {
+    background-image: url('../images/welcome/fundo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    backdrop-filter: blur(8px);
+
+  }
+
+  .site-footer {
+    background: rgb(59, 56, 58);
+  }
+  
