@@ -1,0 +1,38 @@
+.imageText {
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.posterImage{
+    max-width: 250px;
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.4);
+}
+
+.shadowLayer{
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.4);
+}
+
+body {
+    background-image: url('../images/movies/gotCover2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+.rounded-top-right-1 {
+    border-top-right-radius: 1rem;
+}
+
+.rounded-bottom-right-1 {
+    border-bottom-right-radius: 1rem;
+}
+
+.txtShadow{
+    text-shadow: 1px 1px 2px #000000;
+}
+
+
+
