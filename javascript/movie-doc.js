@@ -20,11 +20,16 @@ function genMovieDoc() {
             document.getElementById('mprofile').src = "../images/content/" + content.category + "/" + content.profile;
             document.body.style.backgroundImage = `url('${"../images/content/" + content.category + "/" + content.landscape}')`;
             document.getElementById('actor1').innerHTML = content.cast[0];
+            document.getElementById('actor1').href = 'personalityPageActor.html?name=' + content.cast[0];
             document.getElementById('actor2').innerHTML = content.cast[1];
+            document.getElementById('actor2').href = 'personalityPageActor.html?name=' + content.cast[1];
             document.getElementById('mdescription').innerHTML = content.description;
             document.getElementById('mdirector').innerHTML = content.director;
+            document.getElementById('mdirector').href = 'personalityPageActor.html?name=' + content.director;
             document.getElementById('mproducer').innerHTML = content.produtor;
+            document.getElementById('mproducer').href = 'personalityPageActor.html?name=' + content.produtor;
             document.getElementById('mscreenwriter').innerHTML = content.argumentista;
+            document.getElementById('mscreenwriter').href = 'personalityPageActor.html?name=' + content.argumentista;
     });
 }
 

@@ -1,6 +1,6 @@
 {
     "Sam Worthington" : {
-        "content" : "film",
+        "content" : "films",
         "photo" : "samWorthington.jpg",
         "type" : "Actor",
         "fullName" : "Samuel Henry John Worthington",
@@ -9,7 +9,7 @@
         "profile" : "avatar-profile.jpg"
     },
     "Zoe Saldana" : {
-        "content" : "film",
+        "content" : "films",
         "photo" : "zoeSaldana.jpg",
         "type" : "Atriz",
         "fullName" : "Zoe Saldana-Perego",
@@ -18,7 +18,7 @@
         "profile" : "avatar-profile.jpg"
     },
     "James Cameron" : {
-        "content" : "film",
+        "content" : "films",
         "photo" : "jamesCameron.jpg",
         "type" : "Director",
         "fullName" : "James Francis Cameron",
@@ -28,7 +28,7 @@
     },
 
     "Marlon Brando" : {
-        "content" : "film",
+        "content" : "films",
         "photo" : "marlonBrando.jpg",
         "type" : "Actor",
         "fullName" : "Marlon Brando Jr.",
@@ -37,7 +37,7 @@
         "profile" : "the-godfather-profile.jpg"
     },
     "Al Pacino" : {
-        "content" : "film",
+        "content" : "films",
         "photo" : "alPacino.jpg",
         "type" : "Actor",
         "fullName" : "Alfredo James Pacino",
@@ -46,7 +46,7 @@
         "profile" : "the-godfather-profile.jpg"
     },
     "Francis Coppola" : {
-        "content" : "film",
+        "content" : "films",
         "photo" : "francisCoppola.jpg",
         "type" : "Director",
         "fullName" : "Francis Ford Coppola",
@@ -56,7 +56,7 @@
     },
 
     "Matthew McConaughey" : {
-        "content" : "film",
+        "content" : "films",
         "photo" : "matthewMcConaughey.jpg",
         "type" : "Actor",
         "fullName" : "Matthew David McConaughey",
@@ -65,7 +65,7 @@
         "profile" : "interstellar-profile.jpg"
     },
     "Anne Hathaway" : {
-        "content" : "film",
+        "content" : "films",
         "photo" : "anneHathaway.jpg",
         "type" : "Atriz",
         "fullName" : "Anne Jacqueline Hathaway",
@@ -74,7 +74,7 @@
         "profile" : "interstellar-profile.jpg"
     },
     "Christopher Nolan" : {
-        "content" : "film",
+        "content" : "films",
         "photo" : "christopherNolan.jpg",
         "type" : "Director",
         "fullName" : "Christopher Nolan",

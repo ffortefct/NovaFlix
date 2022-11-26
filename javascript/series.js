@@ -13,7 +13,7 @@ function genSeriesDoc() {
         .then((response) => response.json())
         .then((json) => {
             let content = json[name]
-            
+
             document.getElementById('myear').innerHTML = content.ano;
             document.getElementById('mseasons').innerHTML = content.seasons.length;
             document.getElementById('rating').innerHTML = content.evaluation;
@@ -21,10 +21,13 @@ function genSeriesDoc() {
             document.body.style.backgroundImage = `url('${"../images/content/" + content.category + "/" + content.landscape}')`;
             document.getElementById('actor1').innerHTML = content.cast[0];
             document.getElementById('actor2').innerHTML = content.cast[1];
-            document.getElementById('mdescription').innerHTML = content.description;
             document.getElementById('mdirector').innerHTML = content.director;
+            document.getElementById('mdirector').href = 'personalityPageActor.html?name=' + content.director;
             document.getElementById('mproducer').innerHTML = content.produtor;
+            document.getElementById('mproducer').href = 'personalityPageActor.html?name=' + content.produtor;
             document.getElementById('mscreenwriter').innerHTML = content.argumentista;
+            document.getElementById('mscreenwriter').href = 'personalityPageActor.html?name=' + content.argumentista;
+
     });
 }
 

@@ -14,6 +14,7 @@ function genPersonality() {
     .then((json) => {
         let person = json[name]
 
+        document.getElementById('pphoto').src = "../images/personality/" + person.photo;
         document.getElementById('pname').innerHTML = name;
         document.getElementById('ptype').innerHTML = person.type;
         document.getElementById('pfname').innerHTML = person.fullName;
