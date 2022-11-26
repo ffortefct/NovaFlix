@@ -1,4 +1,4 @@
-body {
+.tmp { /* arranjar isto pq fica bugado com a navbar */
     background-image: url('../images/welcome/fundo.jpg');
     background-position: center;
     background-repeat: no-repeat;

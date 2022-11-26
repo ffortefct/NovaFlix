@@ -15,16 +15,23 @@ function genFavorites() {
                 let items = ''
                 for (let i = 0; i < names.length; i++) {
                     let item = json[names[i]]
+                    let pageLoc = null
+                    if (item.category == 'series') {
+                        pageLoc = 'seriesPage.html'
+                    }
+                    else {
+                        pageLoc = 'movieAndDocumentaryPage.html'
+                    }
                     items += 
                             `
                             <div class="col">
                                 <div class="card border-0 bg-dark">
                                     <div class="card-img-bg-color">
-                                        <a href="#">
+                                        <a href="${pageLoc}?name=${item.name}">
                                             <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="" src="../images/content/${item.category}/${item.landscape}">
                                         </a>
                                     </div>
-                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${names[i]}</b></p>
+                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${item.name}</b></p>
                                 </div>  
                             </div>
                             ` 
