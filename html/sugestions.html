@@ -91,14 +91,9 @@
 
     <main>
 
-        <p>
-            <button type="button" class="btn btn-light m-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <i class="bi bi-plus-circle"></i>
-                Sugerir título
-            </button>
-
+        <p class="ms-4">
             <!-- Search bar -->
-            <input style="width:330px !important; height: 40px" name="search" class=" me-2 rounded-4" type="search"
+            <input style="width:330px !important; height: 40px" name="search" class="me-2 rounded-4" type="search"
                 placeholder="Pesquisar sugestãos existentente" aria-label="Search" id="searchInput">
             <button class="btn btn-dark" onclick="search()">
                 <i class="bi bi-search"></i>
@@ -106,6 +101,11 @@
 
             <button type="button" class="btn btn-light m-5" onclick="clean()">
                 Limpar pesquisa
+            </button>
+
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-plus-circle"></i>
+                Sugerir título
             </button>
         </p>
 
