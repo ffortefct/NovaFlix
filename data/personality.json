@@ -5,6 +5,8 @@
         "type" : "Actor",
         "fullName" : "Samuel Henry John Worthington",
         "birthday" : "2 de Agosto de 1976",
+        "birthplace" : "Surrey, England",
+        "height" : "1.78 m",
         "bibliography" : "Se tornou conhecido principalmente por seus papéis no cinema como Jake Sully no premiado Avatar, Marcus Wright em Terminator Salvation e como Perseu no remake de 2010 Clash of the Titans.",
         "profile" : "avatar-profile.jpg"
     },
@@ -14,6 +16,8 @@
         "type" : "Atriz",
         "fullName" : "Zoe Saldana-Perego",
         "birthday" : "19 de junho de 1978",
+        "birthplace" : "Passaic, Nova Jersey, Estados Unidos",
+        "height" : "1.70 m",
         "bibliography" : "Após apresentações com o grupo de teatro Faces, ela fez sua estreia nas telas em um episódio de Law & Order do ano de 1999. Sua carreira no cinema iniciou um ano depois com o filme Center Stage (2000), seguido por Crossroads (2002).",
         "profile" : "avatar-profile.jpg"
     },
@@ -23,6 +27,8 @@
         "type" : "Director",
         "fullName" : "James Francis Cameron",
         "birthday" : "16 de agosto de 1954",
+        "birthplace" : "Kapuskasing, Ontário, Canadá",
+        "height" : "1.87 m",
         "bibliography" : "É bacharel em física pela Universidade da Califórnia e também explorador dos fundos oceânicos, tendo sido, em 26 de março de 2012, o primeiro homem a descer sozinho num batiscafo ao fundo da Fossa das Marianas.",
         "profile" : "avatar-profile.jpg"
     },
@@ -33,6 +39,8 @@
         "type" : "Actor",
         "fullName" : "Marlon Brando Jr.",
         "birthday" : "3 de abril de 1924",
+        "birthplace" : "Los Angeles; Califórnia, Estados Unidos",
+        "height" : "1.75 m",
         "bibliography" : "É saudado por trazer um estilo realista e emocionante na atuação em seus filmes, e é amplamente considerado um dos maiores e mais influentes atores de todos os tempos.",
         "profile" : "the-godfather-profile.jpg"
     },
@@ -42,6 +50,8 @@
         "type" : "Actor",
         "fullName" : "Alfredo James Pacino",
         "birthday" : "25 de abril de 1940",
+        "birthplace" : "Manhattan, Nova Iorque, Estados Unidos",
+        "height" : "1.68 m",
         "bibliography" : "É conhecido especialmente por interpretar Michael Corleone na trilogia O Poderoso Chefão e Tony Montana em Scarface. Ganhou o Oscar de Melhor Ator no 65ª Prêmio da Academia por sua atuação como Frank Slade em Perfume de Mulher. Antes de sua vitória já havia recebido sete indicações ao Oscar, incluindo uma naquele mesmo ano. ",
         "profile" : "the-godfather-profile.jpg"
     },
@@ -51,6 +61,8 @@
         "type" : "Director",
         "fullName" : "Francis Ford Coppola",
         "birthday" : "7 de Abril de 1939",
+        "birthplace" : "Detroit, Michigan, Estados Unidos",
+        "height" : "1.82 m",
         "bibliography" : "Coppola é mais reconhecido internacionalmente por dirigir uma das mais aclamadas trilogias da história do cinema, The Godfather e clássicos como Apocalypse Now, The Conversation, Bram Stoker's Dracula, entre outros, e por escrever o roteiro do premiado Patton.",
         "profile" : "the-godfather-profile.jpg"
     },
@@ -61,6 +73,8 @@
         "type" : "Actor",
         "fullName" : "Matthew David McConaughey",
         "birthday" : "4 de novembro de 1969",
+        "birthplace" : "Uvalde, Texas, Estados Unidos",
+        "height" : "1.82 m",
         "bibliography" : "McConaughey iniciou a sua carreira de ator em 1991 com pequenas participações em filmes e anúncios publicitários e em 1993 foi seleccionado por casting para o filme Dazed and Confused.",
         "profile" : "interstellar-profile.jpg"
     },
@@ -70,6 +84,8 @@
         "type" : "Atriz",
         "fullName" : "Anne Jacqueline Hathaway",
         "birthday" : "12 de novembro de 1982",
+        "birthplace" : "Nova Iorque, Estados Unidos",
+        "height" : "1.73 m",
         "bibliography" : "Recebedora de vários elogios, incluindo um Oscar, um Globo de Ouro e um Prêmio Primetime Emmy, ela estava entre as atrizes mais bem pagas do mundo em 2015.",
         "profile" : "interstellar-profile.jpg"
     },
@@ -79,6 +95,8 @@
         "type" : "Director",
         "fullName" : "Christopher Nolan",
         "birthday" : "30 de julho de 1970",
+        "birthplace" : "Londres, Reino Unido",
+        "height" : "1.81 m",
         "bibliography" : "Seus dez longas-metragens já arrecadaram o equivalente a mais de 4,2 bilhões de dólares em todo o mundo, fazendo do diretor um dos mais bem-sucedidos comercialmente da moderna Hollywood.",
         "profile" : "interstellar-profile.jpg"
     },
@@ -89,6 +107,8 @@
         "type" : "Mãe do Ronaldo",
         "fullName" : "Dolores Aveiro",
         "birthday" : "4 de novembro de 1969",
+        "birthplace" : "Madeira, Portugal",
+        "height" : "1.62 m",
         "bibliography" : "Mãe do Ronaldo.",
         "profile" : "reinaldo-profile.jpg"
     },
@@ -98,6 +118,8 @@
         "type" : "Actor",
         "fullName" : "Cristiano Ronaldo dos Santos Aveiro",
         "birthday" : "5 de fevereiro de 1985",
+        "birthplace" : "Madeira, Portugal",
+        "height" : "1.87 m",
         "bibliography" : "É o jogador com mais golos na história do futebol em jogos oficiais.",
         "profile" : "reinaldo-profile.jpg"
     },
@@ -107,6 +129,8 @@
         "type" : "Director",
         "fullName" : "Anthony Wonke",
         "birthday" : "30 de julho de 1970",
+        "birthplace" : "Reino Unido",
+        "height" : "1.85 m",
         "bibliography" : "Seus dez longas-metragens já arrecadaram o equivalente a mais de 4,2 bilhões de dólares em todo o mundo, fazendo do diretor um dos mais bem-sucedidos comercialmente da moderna Hollywood.",
         "profile" : "reinaldo-profile.jpg"
     },
@@ -117,6 +141,8 @@
         "type" : "Actor",
         "fullName" : "Pedro González Alonso",
         "birthday" : "21 de junho de 1971",
+        "birthplace" : "Vigo, Galiza, Espanha",
+        "height" : "1.88 m",
         "bibliography" : "Ele é formado pela Real Escola de Arte Dramática e também estudou teatro e dança.",
         "profile" : "lcdp-profile.jpg"
     },
@@ -126,7 +152,9 @@
         "type" : "Actor",
         "fullName" : "Álvaro Antonio García Pérez",
         "birthday" : "5 de fevereiro de 1985",
-        "bibliography" : "É o jogador com mais golos na história do futebol em jogos oficiais.",
+        "birthplace" : "Algeciras, Cádis, Espanha",
+        "height" : "1.83 m",
+        "bibliography" : "Ator conhecido pela personagem El professor na série espanhola La Casa De Papel.",
         "profile" : "lcdp-profile.jpg"
     },
     "Luis Alfaro" : {
@@ -135,6 +163,8 @@
         "type" : "Director",
         "fullName" : "Luis Alfaro",
         "birthday" : "desconhecido",
+        "birthplace" : "Los Angeles, California, Estados Unidos",
+        "height" : "1.74 m",
         "bibliography" : "Conhecido por The Lost City (2022), The Killer e Carta Blanca (2021)",
         "profile" : "lcdp-profile.jpg"
     },
@@ -145,6 +175,8 @@
         "type" : "Actor",
         "fullName" : "Al Gore",
         "birthday" : "21 de junho de 1971",
+        "birthplace" : "Washington, D.C., Estados Unidos",
+        "height" : "1.85 m",
         "bibliography" : "Ele é formado pela Real Escola de Arte Dramática e também estudou teatro e dança.",
         "profile" : "inconvenient-profile.jpg"
     },
@@ -154,6 +186,8 @@
         "type" : "Actor",
         "fullName" : "William Richard West",
         "birthday" : "16 de abril de 1952",
+        "birthplace" : "Detroit, Michigan, Estados Unidos",
+        "height" : "1.63 m",
         "bibliography" : "Em 1996, West protagonizou as vozes de Pernalonga e Hortelino no filme Space Jam (1996) e também trabalhou em tempo integral no Howard Stern Show.",
         "profile" : "inconvenient-profile.jpg"
     },
@@ -163,6 +197,8 @@
         "type" : "Director",
         "fullName" : "Davis Guggenheim",
         "birthday" : "desconhecido",
+        "birthplace" : "St. Louis, Missouri, Estados Unidos",
+        "height" : "1.83 m",
         "bibliography" : "Director de An Inconvenient Truth",
         "profile" : "inconvenient-profile.jpg"
     },
@@ -173,6 +209,8 @@
         "type" : "Actor",
         "fullName" : "Eric McCormack",
         "birthday" : "21 de agosto de 1951",
+        "birthplace" : "Toronto, Ontário, Canadá",
+        "height" : "1.80 m",
         "bibliography" : "Educado e treinado como ator no Canadá na Ryerson University, McCormack aparece na televisão desde a sua estreia em 1986. ",
         "profile" : "travelers-profile.jpg"
     },
@@ -182,6 +220,8 @@
         "type" : "Actor",
         "fullName" : "MacKenzie Porter",
         "birthday" : "16 de setembro de 1952",
+        "birthplace" : "Medicine Hat, Canadá",
+        "height" : "1.63 m",
         "bibliography" : "Ela começou a estudar piano, violino e voz aos quatro anos. Mais tarde, ela viajou em uma banda com seu irmão vencedor do Canadian Idol  2004 Kalan Porter.",
         "profile" : "travelers-profile.jpg"
     },
@@ -191,6 +231,8 @@
         "type" : "Director",
         "fullName" : "Brad Wright",
         "birthday" : "16 de setembro de 1952",
+        "birthplace" : "Toronto, Canadá",
+        "height" : "2,13 m",
         "bibliography" : "Director de Travelers",
         "profile" : "travelers-profile.jpg"
     },
@@ -201,6 +243,8 @@
         "type" : "Actor",
         "fullName" : "Jeff Bridges",
         "birthday" : "21 de janeiro de 1951",
+        "birthplace" : "Los Angeles, Califórnia, EUA",
+        "height" : "1,85 m",
         "bibliography" : "Na juventude pertenceu à Guarda Costeira dos Estados Unidos.",
         "profile" : "tom-profile.jpg"
     },
@@ -210,6 +254,8 @@
         "type" : "Actor",
         "fullName" : "John Lithgow",
         "birthday" : "16 de abril de 1952",
+        "birthplace" : "Rochester, Nova York, Estados Unidos",
+        "height" : "1,93 m",
         "bibliography" : "Arthur Lithgow era um produtor e diretor teatral que dirigia o McCarter Theatre em Princeton, New Jersey.",
         "profile" : "tom-profile.jpg"
     },
@@ -219,6 +265,8 @@
         "type" : "Director",
         "fullName" : "Robert Levine",
         "birthday" : "5 de dezembro de 1952",
+        "birthplace" : "Rochester, Nova York, Estados Unidos",
+        "height" : "1,80 m",
         "bibliography" : "Director de The Old Man",
         "profile" : "tom-profile.jpg"
     },
@@ -229,6 +277,8 @@
         "type" : "Actor",
         "fullName" : "Tom Sturridge",
         "birthday" : "1 de janeiro de 1951",
+        "birthplace" : "Lambeth, Londres, Reino Unido",
+        "height" : "1,78 m",
         "bibliography" : "Mais conhecido por seus papéis em Being Julia, Like Minds e The Boat That Rocked.",
         "profile" : "sandman-profile.jpg"
     },
@@ -238,6 +288,8 @@
         "type" : "Actor",
         "fullName" : "Boyd Holbrook",
         "birthday" : "3 de abril de 1952",
+        "birthplace" : "Prestonsburg, Kentucky, EUA",
+        "height" : "1,88 m",
         "bibliography" : "É um ator e modelo americano. Seus trabalhos mais notáveis foram como Steve Murphy, agente da DEA, em Narcos.",
         "profile" : "sandman-profile.jpg"
     },
@@ -247,6 +299,8 @@
         "type" : "Director",
         "fullName" : "Neil Gaiman",
         "birthday" : "23 de dezembro de 1952",
+        "birthplace" : "Portchester, Reino Unido",
+        "height" : "1,80 m",
         "bibliography" : "Director de The Sandman",
         "profile" : "sandman-profile.jpg"
     }
