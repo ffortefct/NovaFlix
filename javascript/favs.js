@@ -1,4 +1,4 @@
-function genFavorites() {
+function genFilms() {
     const results = document.getElementById('favs-results')
 
     let content = localStorage.getItem("favs-list-ipm2022");
@@ -41,7 +41,7 @@ function genFavorites() {
     }
 }
 
-genFavorites()
+genFilms()
 
 function sortByEvaluation() {
     const results = document.getElementById('favs-results')

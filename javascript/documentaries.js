@@ -4,7 +4,7 @@ function genFilms() {
     });
     document.getElementById('category-name').innerHTML = params.category;
 
-    const results = document.getElementById('series-results')
+    const results = document.getElementById('documentaries-results')
 
     fetch(location.href.split('html')[0] + 'data/content.json')
     .then((response) => response.json())
@@ -14,20 +14,20 @@ function genFilms() {
         let itemsObjs = []
         for (let key in json) {
             let obj = json[key]
-            if (obj.category == 'series') {
+            if (obj.category == 'documentaries') {
                 itemsObjs.push(obj)
             }
         }
 
         for (let i = 0; i < itemsObjs.length; i++) {
             let item = itemsObjs[i]
-            let pageLoc = 'seriesPage.html'
+            let pageLoc = 'movieAndDocumentaryPage.html'
             items += `
             <div class="col mb-3">
                 <div class="card border-0 bg-dark">
                     <div class="card-img-bg-color">
                         <a href="${pageLoc}?=${item.name}">
-                            <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/series/${item.landscape}">
+                            <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/documentaries/${item.landscape}">
                         </a>
                     </div>
                     <div class="row mt-2">
@@ -60,7 +60,7 @@ function genFilms() {
 genFilms()
 
 function sortByName() {
-    const results = document.getElementById('series-results')
+    const results = document.getElementById('documentaries-results')
 
     fetch(location.href.split('html')[0] + 'data/content.json')
     .then((response) => response.json())
@@ -70,7 +70,7 @@ function sortByName() {
         let itemsObjs = []
         for (let key in json) {
             let obj = json[key]
-            if (obj.category == 'series') {
+            if (obj.category == 'documentaries') {
                 itemsObjs.push(obj)
             }
         }
@@ -79,13 +79,13 @@ function sortByName() {
 
         for (let i = 0; i < itemsObjs.length; i++) {
             let item = itemsObjs[i]
-            let pageLoc = 'seriesPage.html'
+            let pageLoc = 'movieAndDocumentaryPage.html'
             items += `
             <div class="col mb-3">
                 <div class="card border-0 bg-dark">
                     <div class="card-img-bg-color">
                         <a href="${pageLoc}?=${item.name}">
-                            <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/series/${item.landscape}">
+                            <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/documentaries/${item.landscape}">
                         </a>
                     </div>
                     <div class="row mt-2">
@@ -116,7 +116,7 @@ function sortByName() {
 }
 
 function sortByPremiere() {
-    const results = document.getElementById('series-results')
+    const results = document.getElementById('documentaries-results')
 
     fetch(location.href.split('html')[0] + 'data/content.json')
     .then((response) => response.json())
@@ -126,7 +126,7 @@ function sortByPremiere() {
         let itemsObjs = []
         for (let key in json) {
             let obj = json[key]
-            if (obj.category == 'series') {
+            if (obj.category == 'documentaries') {
                 itemsObjs.push(obj)
             }
         }
@@ -135,13 +135,13 @@ function sortByPremiere() {
 
         for (let i = 0; i < itemsObjs.length; i++) {
             let item = itemsObjs[i]
-            let pageLoc = 'seriesPage.html'
+            let pageLoc = 'movieAndDocumentaryPage.html'
             items += `
             <div class="col mb-3">
                 <div class="card border-0 bg-dark">
                     <div class="card-img-bg-color">
                         <a href="${pageLoc}?=${item.name}">
-                            <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/series/${item.landscape}">
+                            <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/documentaries/${item.landscape}">
                         </a>
                     </div>
                     <div class="row mt-2">
@@ -172,7 +172,7 @@ function sortByPremiere() {
 }
 
 function sortByPopularity() {
-    const results = document.getElementById('series-results')
+    const results = document.getElementById('documentaries-results')
 
     fetch(location.href.split('html')[0] + 'data/content.json')
     .then((response) => response.json())
@@ -182,7 +182,7 @@ function sortByPopularity() {
         let itemsObjs = []
         for (let key in json) {
             let obj = json[key]
-            if (obj.category == 'series') {
+            if (obj.category == 'documentaries') {
                 itemsObjs.push(obj)
             }
         }
@@ -191,13 +191,13 @@ function sortByPopularity() {
 
         for (let i = 0; i < itemsObjs.length; i++) {
             let item = itemsObjs[i]
-            let pageLoc = 'seriesPage.html'
+            let pageLoc = 'movieAndDocumentaryPage.html'
             items += `
             <div class="col mb-3">
                 <div class="card border-0 bg-dark">
                     <div class="card-img-bg-color">
                         <a href="${pageLoc}?=${item.name}">
-                            <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/series/${item.landscape}">
+                            <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/documentaries/${item.landscape}">
                         </a>
                     </div>
                     <div class="row mt-2">

@@ -8,14 +8,14 @@
         <link rel="icon" href="../images/favicon.ico">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="../css/carousel.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/personalities.css">
+        <link href="../css/libs/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/f_buttons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="../css/shadow.css">
     </head>
-    <body class="bg-dark">
-
+    <body style="height: 100vh;" class="bg-dark">
         <!-- Navigation Bar -->
-        <header class="mb-5">
+        <header>
             <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top realistic-shadow">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="overview.html">
@@ -34,7 +34,7 @@
                             <li class="nav-item me-4"><a class="nav-link" href="series-collection.html">Séries</a></li>
                             <li class="nav-item me-4"><a class="nav-link" href="documentaries-collection.html">Documentários</a></li>
                             <li class="nav-item me-4"><a class="nav-link" href="favs.html">Minha Lista</a></li>
-                            <li class="nav-item"><a class="nav-link" href="sugestions.html">Sugestões</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sugestões</a></li>
                         </ul>
                         <!-- Sections (collapsed version) -->
                         <ul class="navbar-nav mb-2 me-auto mb-md-0 d-xxl-none d-flex">
@@ -75,82 +75,35 @@
             </nav>
         </header>
 
-
-        <main class="pt-5">
-            <div class="container text-white">
-                <div class="row align-items-center mb-5">
-                    <div class="col-md-5 text-center">
-                        <img id="pphoto" class="img-fluid border border-5 border-white shadowLayer" src="" alt="personality photo" style="width: 250px;">
-                    </div>
-
-                    <div class="col-md-5 text-center text-md-start text-white">
-                        <p><span id="pname" class="fw-bold display-1"></span></p>
-                        <p><span id="ptype" class="fw-bold"></span></p>
-                        <p>
-                            <span class="fw-bold">Nome completo:</span>
-                            <span id="pfname"></span>
-                        </p>
-                        <p>
-                            <span class="fw-bold">Data de nascimento:</span>
-                            <span id="pbirthday"></span>
-                        </p>
-                    </div>                    
+        <main>
+            <h3 id="category-name" class="mt-5 mb-2 text-white" style="text-align:center"></h3>
+            
+              <!-- Sorter section -->
+        
+            <div class="dropdown pe-5 mb-5 me-5">
+                <div class="btn-group position-absolute top-0 end-0 drop-start pe-5 mb-5">
+                    <button class="btn btn-dark dropdown-toggle ms-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ordenar por:
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" onclick="sortByName()">Alfabeticamente</a></li>
+                        <li><a class="dropdown-item" onclick="sortByPremiere()">Data de Estreia</a></li>
+                        <li><a class="dropdown-item" onclick="sortByPopularity()">Popularidade</a></li>
+                    </ul>
                 </div>
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-md-9">
-                        <h2>Biografia:</h2>
-                        <p id="pbibliography"></p>
-                    </div>
-                </div>
-                <div class="row mt-2 justify-content-center">
-                    <div class="col-md-9">
-                        <h2>Filmes em que participou:</h2>
-                    </div>
-                </div>
-                <div class="row mt-2 justify-content-center">
-                    <div class="col-md-9">
-                        <div class="row ">                   
-                            <a id="ppfilms" class="col-md-2 text-center pb-2" href="">
-                                <img id="pfilms" class="img-fluid shadowLayer zoom" src="" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row mt-4 justify-content-center">
-                        <div class="col-md-9">
-                            <h2>Séries em que participou:</h2>
-                        </div>
-                    </div>
-                    <div class="row mt-2 justify-content-center">
-                        <div class="col-md-9">
-                            <div class="row ">                   
-                                <a id="ppseries" class="col-md-2 text-center pb-2" href="">
-                                    <img id="pseries" class="img-fluid shadowLayer zoom" src="" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-2 justify-content-center">
-                        <div class="col-md-9">
-                            <h2>Documentários em que participou:</h2>
-                        </div>
-                    </div>
-                    <div class="row mt-2 justify-content-center">
-                        <div class="col-md-9">
-                            <div class="row">                   
-                                <a id="ppdocumentaries" class="col-md-2 text-center pb-2" href="">
-                                    <img id="pdocumentaries" class="img-fluid shadowLayer zoom" src="" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
             </div>
+            
+            <!-- Trending section -->
+            <section class="pt-5 pb-5 bg-dark mt-5">
+                <div class="container">
+                    <div id="films-results" class="row row-cols-4">
+                    </div>
+                </div>
+            </section>
         </main>
 
-       
-
-   
-
-        <script src="../javascript/personality.js""></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="../javascript/libs/bootstrap.bundle.js"></script>
+        <script src="../javascript/films.js"></script>
+        <script src="../javascript/favs-list.js"></script>
     </body>
 </html>
