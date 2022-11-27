@@ -85,7 +85,7 @@
                         <i class="bi bi-play-circle"></i>
                         Ver
                     </button>
-                    <button type="button" class="btn btn-light">
+                    <button id="add-fav-btn" type="button" class="btn btn-light">
                         <i class="bi bi-plus-circle"></i>
                         Adicionar
                     </button>
@@ -201,13 +201,13 @@
                 aria-labelledby="exampleModalLabel3" aria-hidden="true">
                 <div class="modal-content text-bg-dark">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel3">Benzemário</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel3"></h1>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close" onclick="document.getElementById('video').pause()"></button>
                     </div>
                     <div class="modal-body" style="background-color: black;">
                         <video id="video" class="h-100 position-absolute top-50 start-50 translate-middle"
-                            src="" controls></video>
+                            src="../videos/videoplayback.mp4" controls></video>
                     </div>
                 </div>
             </div>
@@ -221,13 +221,13 @@
                 aria-labelledby="exampleModalLabel4" aria-hidden="true">
                 <div class="modal-content text-bg-dark">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel4">Trailer - Benzemário</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel4">Trailer - <span id="trailer-name"></span></h1>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close" onclick="document.getElementById('trailer').pause()"></button>
                     </div>
                     <div class="modal-body" style="background-color: black;">
                         <video id="trailer" class="h-100 position-absolute top-50 start-50 translate-middle"
-                            src="" controls></video>
+                            src="../videos/videoplayback.mp4" controls></video>
                     </div>
                 </div>
             </div>
@@ -325,6 +325,7 @@
     </script>
 
     <script src="../javascript/libs/bootstrap.bundle.js"></script>
+    <script src="../javascript/favs-list.js"></script>
     <script src="../javascript/movie-doc.js"></script>
 </body>
 

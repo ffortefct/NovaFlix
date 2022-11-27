@@ -14,6 +14,9 @@ function genMovieDoc() {
         .then((json) => {
             let content = json[name]
             
+            document.getElementById('add-fav-btn').onclick = () => addToList(content.name)
+            document.getElementById('trailer-name').innerHTML = content.name;
+            document.getElementById('exampleModalLabel3').innerHTML = content.name;
             document.getElementById('myear').innerHTML = content.ano;
             document.getElementById('mduration').innerHTML = content.duration;
             document.getElementById('rating').innerHTML = content.evaluation;

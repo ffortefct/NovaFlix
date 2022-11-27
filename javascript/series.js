@@ -14,6 +14,10 @@ function genSeriesDoc() {
         .then((json) => {
             let content = json[name]
 
+            document.getElementById('add-fav-btn').onclick = () => addToList(content.name)
+            document.getElementById('trailer-name').innerHTML = content.name;
+            document.getElementById('mdescription').innerHTML = content.description;
+            document.getElementById('exampleModalLabel3').innerHTML = content.name;
             document.getElementById('myear').innerHTML = content.ano;
             document.getElementById('mseasons').innerHTML = content.seasons.length;
             document.getElementById('rating').innerHTML = content.evaluation;
@@ -33,7 +37,6 @@ function genSeriesDoc() {
             let seriesTabs = document.getElementById('series-tabs');
             let tabsWithCarousel = document.getElementById('tabs-with-carousels')
             let seasons = content.seasons;
-            console.log(seasons)
             tabsWithCarousel.innerHTML = genCarousel(1, seasons[0], true);
             seriesTabs.innerHTML = genTab(1, true);
             for (let seasonN = 2; seasonN <= seasons.length; seasonN++) {
@@ -60,7 +63,6 @@ function genSeasonEpisodes(episodes) {
             let j = i;
             for (; j - i < 4 && j < episodes.length; j++) {
                 let episode = episodes[j]
-                console.log(episode, j)
                 items += `
                 <div class="col-md-3 mb-3">
                     <div class="card border-0 bg-dark">
