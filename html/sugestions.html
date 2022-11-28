@@ -91,13 +91,11 @@
                 Limpar pesquisa
             </button>
 
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="cleanData()">
                 <i class="bi bi-plus-circle"></i>
                 Sugerir título
             </button>
         </p>
-
-
 
         <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
@@ -111,7 +109,7 @@
                         <form>
                             <div class="mb-3">
                                 <label for="contentName" class="form-label">Nome:</label>
-                                <input type="text" class="form-control" id="contentName" aria-describedby="emailHelp">
+                                <input type="text" class="form-control" id="contentName" aria-describedby="name">
                             </div>
                             <div class="mb-3">
                                 <label for="contentReleaseDate" class="form-label">Ano de lançamento:</label>
@@ -142,7 +140,7 @@
                                 </a>
                             </div>
                             <div class="row mt-2">
-                                <div class="col-8 me-4">
+                                <div class="col-8 me-3">
                                     <div class="row row-cols-1">
                                         <div class="col">
                                             <span class="ms-4 text-white"
@@ -158,8 +156,9 @@
                                 <div class="col">
                                     <button type="button" class="btn btn-dark"
                                         style="transform: translate(0, 10%); scale: 1.3;">
-                                        <b><i class="bi bi-hand-thumbs-up" onclick="incLikes('ronaldo')"> </i><span
-                                                id="ronaldo">7</span></b>
+                                        <b>
+                                            <div onclick="incLikes('ronaldo')"><i class="bi bi-hand-thumbs-up me-1"></i><span id="ronaldo">7</span></div>
+                                        </b>
                                     </button>
                                 </div>
                             </div>
@@ -174,7 +173,7 @@
                                 </a>
                             </div>
                             <div class="row mt-2">
-                                <div class="col-8 me-4">
+                                <div class="col-8 me-3">
                                     <div class="row row-cols-1">
                                         <div class="col">
                                             <span class="ms-4 text-white" style="margin-bottom: 0px;"><b>The
@@ -190,8 +189,9 @@
                                 <div class="col">
                                     <button type="button" class="btn btn-dark"
                                         style="transform: translate(0, 10%); scale: 1.3;">
-                                        <b><i class="bi bi-hand-thumbs-up" onclick="incLikes('sandman')"> </i><span
-                                                id="sandman">5</span></b>
+                                        <b>
+                                            <div onclick="incLikes('sandman')"><i class="bi bi-hand-thumbs-up me-1"></i><span id="sandman">7</span></div>
+                                        </b>
                                     </button>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@
                                 </a>
                             </div>
                             <div class="row mt-2">
-                                <div class="col-8 me-4">
+                                <div class="col-8 me-3">
                                     <div class="row row-cols-1">
                                         <div class="col">
                                             <span class="ms-4 text-white"
@@ -222,52 +222,24 @@
                                 <div class="col">
                                     <button type="button" class="btn btn-dark"
                                         style="transform: translate(0, 10%); scale: 1.3;">
-                                        <b><i class="bi bi-hand-thumbs-up" onclick="incLikes('avatar')"> </i><span
-                                                id="avatar">3</span></b>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3" id="Exampleh1col">
-                        <div class="card border-0 bg-dark">
-                            <div class="card-img-bg-color">
-                                <a href="#">
-                                    <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex4"
-                                        src="../images/content/ex4.jpg">
-                                </a>
-                            </div>
-                            <div class="row mt-2">
-                                <div class="col-8 me-4">
-                                    <div class="row row-cols-1">
-                                        <div class="col">
-                                            <span class="ms-4 text-white" style="margin-bottom: 0px;"><b>Example
-                                                    1</b></span>
-                                        </div>
-                                        <div class="col">
-                                            <p class="ms-4 text-white" style="opacity: 0.5;">
-                                                <b>2022</b> ● <b>190 minutos</b>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <button type="button" class="btn btn-dark"
-                                        style="transform: translate(0, 10%); scale: 1.3;">
-                                        <b><i class="bi bi-hand-thumbs-up" onclick="incLikes('ex1')"> </i><span
-                                                id="ex1">2</span></b>
+                                        <b>
+                                            <div onclick="incLikes('avatar')"><i class="bi bi-hand-thumbs-up me-1"></i><span id="avatar">7</span></div>
+                                        </b>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
         </section>
     </main>
 
     <script>
+        function cleanData() {
+            document.getElementById('contentName').value = ''
+            document.getElementById('contentReleaseDate').value = ''
+        }
+
         function insertRequestedTitle() {
             var requests = document.getElementById('requests')
 
@@ -289,7 +261,7 @@
                                 </a>
                             </div>
                             <div class="row mt-2">
-                                <div class="col-8 me-4">
+                                <div class="col-8 me-3">
                                     <div class="row row-cols-1">
                                         <div class="col">
                                             <span class="ms-4 text-white" style="margin-bottom: 0px;"><b>${titleName}</b></span>
@@ -304,7 +276,9 @@
                                 <div class="col">
                                     <button type="button" class="btn btn-dark"
                                         style="transform: translate(0, 10%); scale: 1.3;">
-                                        <b><i class="bi bi-hand-thumbs-up" onclick="incLikes('${id}')"> </i><span id="${id}"> 1</span></b>
+                                        <b>
+                                            <div onclick="incLikes('${id}')"><i class="bi bi-hand-thumbs-up me-1"></i><span id="${id}">1</span></div>
+                                        </b>
                                     </button>
                                 </div>
                             </div>
@@ -315,7 +289,7 @@
 
         function incLikes(id) {
             var likes = document.getElementById(id)
-
+            console.log(id)
             likes.innerHTML = Number(likes.innerHTML) + 1
         }
 

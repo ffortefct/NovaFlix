@@ -68,7 +68,7 @@ function genSeasonEpisodes(episodes) {
                     <div class="card border-0 bg-dark">
                         <div class="card-img-bg-color">
                             <a href="#">
-                                <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="ex1" src="../images/content/series/${episode.landscape}">
+                                <img style="height: 150px;" class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/series/${episode.landscape}">
                             </a>
                         </div>
                         <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${episode.name}</b></p>

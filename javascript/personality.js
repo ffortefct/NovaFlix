@@ -20,6 +20,8 @@ function genPersonality() {
         document.getElementById('pfname').innerHTML = person.fullName;
         document.getElementById('pbirthday').innerHTML = person.birthday;
         document.getElementById('pbibliography').innerHTML = person.bibliography;
+        document.getElementById('pbirthplace').innerHTML = person.birthplace;
+        document.getElementById('pheight').innerHTML = person.height;
 
         let category = person.content
         

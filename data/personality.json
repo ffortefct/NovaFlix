@@ -8,7 +8,7 @@
         "birthplace" : "Surrey, England",
         "height" : "1.78 m",
         "bibliography" : "Se tornou conhecido principalmente por seus papéis no cinema como Jake Sully no premiado Avatar, Marcus Wright em Terminator Salvation e como Perseu no remake de 2010 Clash of the Titans.",
-        "profile" : "avatar-profile.jpg"
+        "profile" : "avatar-profile.jpeg"
     },
     "Zoe Saldana" : {
         "content" : "films",
@@ -19,7 +19,7 @@
         "birthplace" : "Passaic, Nova Jersey, Estados Unidos",
         "height" : "1.70 m",
         "bibliography" : "Após apresentações com o grupo de teatro Faces, ela fez sua estreia nas telas em um episódio de Law & Order do ano de 1999. Sua carreira no cinema iniciou um ano depois com o filme Center Stage (2000), seguido por Crossroads (2002).",
-        "profile" : "avatar-profile.jpg"
+        "profile" : "avatar-profile.jpeg"
     },
     "James Cameron" : {
         "content" : "films",
@@ -30,7 +30,7 @@
         "birthplace" : "Kapuskasing, Ontário, Canadá",
         "height" : "1.87 m",
         "bibliography" : "É bacharel em física pela Universidade da Califórnia e também explorador dos fundos oceânicos, tendo sido, em 26 de março de 2012, o primeiro homem a descer sozinho num batiscafo ao fundo da Fossa das Marianas.",
-        "profile" : "avatar-profile.jpg"
+        "profile" : "avatar-profile.jpeg"
     },
 
     "Marlon Brando" : {
@@ -273,7 +273,7 @@
 
     "Tom Sturridge" : {
         "content" : "series",
-        "photo" : "tomSturridge.jpg",
+        "photo" : "tomSturridge.jpeg",
         "type" : "Actor",
         "fullName" : "Tom Sturridge",
         "birthday" : "1 de janeiro de 1951",
