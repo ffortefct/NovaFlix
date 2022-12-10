@@ -1,3 +1,11 @@
+function deleteContent(contentName) {
+    let content = localStorage.getItem("favs-list-ipm2022");
+    let names = content.split(',')
+    let final = names.filter(name => name != contentName)
+    localStorage.setItem("favs-list-ipm2022", final.join(','))
+    genFilms()
+}
+
 function genFilms() {
     const results = document.getElementById('favs-results')
 
@@ -5,7 +13,7 @@ function genFilms() {
 
     if (content === null) {
         let msg = '<h3 class="text-white ms-1 mt-5">Ainda não adicionaste nada à tua lista!</h3>'
-        results.insertAdjacentHTML('beforeend', msg);
+        results.innerHTML = msg;
     }
     else {
         let names = content.split(',')
@@ -30,13 +38,22 @@ function genFilms() {
                                     <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="" src="../images/content/${item.category}/${item.landscape}">
                                 </a>
                             </div>
-                            <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${item.name}</b></p>
+                            <div class="row row-cols-4 mt-1">
+                                <div class="col-9">
+                                    <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${item.name}</b></p>
+                                </div>  
+                                <div class="col">
+                                    <button type="button" onclick="deleteContent('${item.name}')" class="btn btn-dark" style="transform: translate(0, 10%); scale: 1.3;">
+                                        <b><i class="bi bi-trash"></i></b>
+                                    </button>
+                                </div>  
+                            </div>
                         </div>  
                     </div>
                     ` 
                 }
-                let msg = `<div class="row row-cols-5 ms-1 mt-5">${items}</div>`
-                results.insertAdjacentHTML('beforeend', msg);
+                let msg = `<div class="row row-cols-4 ms-1 mt-5">${items}</div>`
+                results.innerHTML = msg;
         });
     }
 }
@@ -83,13 +100,22 @@ function sortByEvaluation() {
                                 <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="" src="../images/content/${item.category}/${item.landscape}">
                             </a>
                         </div>
-                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${item.name}</b></p>
+                        <div class="row row-cols-4 mt-1">
+                            <div class="col-9">
+                                <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${item.name}</b></p>
+                            </div>  
+                            <div class="col">
+                                <button type="button" onclick="deleteContent('${item.name}')" class="btn btn-dark" style="transform: translate(0, 10%); scale: 1.3;">
+                                    <b><i class="bi bi-trash"></i></b>
+                                </button>
+                            </div>  
+                        </div>
                     </div>  
                 </div>
                 ` 
             }
 
-            let msg = `<div class="row row-cols-5 ms-1 mt-5">${items}</div>`
+            let msg = `<div class="row row-cols-4 ms-1 mt-5">${items}</div>`
             results.innerHTML = msg;
         });
     }
@@ -128,20 +154,29 @@ function sortByViews() {
                     pageLoc = 'movieAndDocumentaryPage.html'
                 }
                 items += `
-                <div class="col">
+                <div class="col" style="order;">
                     <div class="card border-0 bg-dark">
                         <div class="card-img-bg-color">
                             <a href="${pageLoc}?name=${item.name}">
                                 <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="" src="../images/content/${item.category}/${item.landscape}">
                             </a>
                         </div>
-                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${item.name}</b></p>
+                        <div class="row row-cols-4 mt-1">
+                            <div class="col-9">
+                                <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${item.name}</b></p>
+                            </div>  
+                            <div class="col">
+                                <button type="button" onclick="deleteContent('${item.name}')" class="btn btn-dark" style="transform: translate(0, 10%); scale: 1.3;">
+                                    <b><i class="bi bi-trash"></i></b>
+                                </button>
+                            </div>  
+                        </div>
                     </div>  
                 </div>
                 ` 
             }
 
-            let msg = `<div class="row row-cols-5 ms-1 mt-5">${items}</div>`
+            let msg = `<div class="row row-cols-4 ms-1 mt-5">${items}</div>`
             results.innerHTML = msg;
         });
     }
@@ -180,20 +215,29 @@ function sortByTrends() {
                     pageLoc = 'movieAndDocumentaryPage.html'
                 }
                 items += `
-                <div class="col">
+                <div class="col" style="order;">
                     <div class="card border-0 bg-dark">
                         <div class="card-img-bg-color">
                             <a href="${pageLoc}?name=${item.name}">
                                 <img class="img-fluid rounded-5 h-100 w-100 card-img-top" alt="" src="../images/content/${item.category}/${item.landscape}">
                             </a>
                         </div>
-                        <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${item.name}</b></p>
+                        <div class="row row-cols-4 mt-1">
+                            <div class="col-9">
+                                <p class="ms-4 mt-2 text-white" style="margin-bottom: 0px;"><b>${item.name}</b></p>
+                            </div>  
+                            <div class="col">
+                                <button type="button" onclick="deleteContent('${item.name}')" class="btn btn-dark" style="transform: translate(0, 10%); scale: 1.3;">
+                                    <b><i class="bi bi-trash"></i></b>
+                                </button>
+                            </div>  
+                        </div>
                     </div>  
                 </div>
                 ` 
             }
 
-            let msg = `<div class="row row-cols-5 ms-1 mt-5">${items}</div>`
+            let msg = `<div class="row row-cols-4 ms-1 mt-5">${items}</div>`
             results.innerHTML = msg;
         });
     }

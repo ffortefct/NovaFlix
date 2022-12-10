@@ -124,7 +124,8 @@
             </div>
         </div>
 
-        <button type="button" class="btn btn-dark m-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-dark m-5" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            onclick="document.getElementById('text-comment').value = ''">
             <i class="bi bi-plus-circle"></i>
             Adicionar comentário
         </button>
@@ -237,15 +238,39 @@
         <div id="comments" class="container">
             <div class="card text-bg-dark mb-3">
                 <div class="card-body">
-                    <h5 class="card-title">João Araújo</h5>
-                    <p class="card-text">Filme muito bom. Alguém está comigo?</p>
-                    <small class="text-muted">8 de julho 2022</small>
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <h5 class="card-title">João Araújo</h5>
+                        </div>
+                        <div class="col mt-1 mb-2">
+                            <p class="card-text">Filme muito bom. Alguém está comigo?</p>
+                        </div>
+                        <div class="col">
+                            <small class="text-muted">8 de julho 2022</small>
+                        </div>    
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     
     <script>
+        let months = [
+            null, // starts at 1
+            "janeiro",
+            "fevereiro",
+            "março",
+            "abril",
+            "maio",
+            "junho",
+            "julho",
+            "agosto",
+            "setembro",
+            "outubro",
+            "novembro",
+            "dezembro"
+        ]
+
         function setRating() {
             var rating = document.getElementById('rating')
 
@@ -264,6 +289,13 @@
             
         }
 
+        let counter = 0;
+
+        function deleteComment(cId) {
+            let comment = document.getElementById(cId);
+            comment.parentNode.removeChild(comment);
+        }
+
         function setCommit() {
             let comments = document.getElementById('comments')
 
@@ -272,18 +304,36 @@
             comment = document.getElementById('text-comment').value;
 
             if (comment.length != 0) {
-                comments.innerHTML += `<div class="card text-bg-dark mb-3">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Utilizador</h5>
-                                            <p class="card-text">${comment}</p>
-                                            <small class="text-muted">10 de abril 2022</small>
-                                        </div>
-                                    </div>`
+                let date = new Date();
+                let day = String(date.getDate()).padStart(2, '0');
+                let month = String(date.getMonth() + 1).padStart(2, '0');
+                let year = date.getFullYear();
+                let todaysDate = day + ' de ' + months[month] + ' ' + year;
+
+                comments.innerHTML += `
+                <div id="comment-${counter}" class="card text-bg-dark mb-3">
+                    <div class="card-body">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <h5 class="card-title">Utilizador</h5>
+                            </div>
+                            <div class="col mt-1 mb-2">
+                                <p class="card-text">${comment}</p>
+                            </div>
+                            <div class="col">
+                                <small class="text-muted">${todaysDate}</small>
+                            </div>    
+                            <div class="col">
+                                <button type="button" onclick="deleteComment('comment-${counter}')" class="btn btn-secondary mt-2"">
+                                    Remover comentário
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `
+                counter++;
             }
-
-            
-
-            
         }
     </script>
 

@@ -26,7 +26,7 @@ function genFilms() {
             <div class="col mb-3">
                 <div class="card border-0 bg-dark">
                     <div class="card-img-bg-color">
-                        <a href="${pageLoc}?=${item.name}">
+                        <a href="${pageLoc}?name=${item.name}">
                             <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/series/${item.landscape}">
                         </a>
                     </div>
@@ -84,7 +84,7 @@ function sortByName() {
             <div class="col mb-3">
                 <div class="card border-0 bg-dark">
                     <div class="card-img-bg-color">
-                        <a href="${pageLoc}?=${item.name}">
+                        <a href="${pageLoc}?name=${item.name}">
                             <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/series/${item.landscape}">
                         </a>
                     </div>
@@ -140,7 +140,7 @@ function sortByPremiere() {
             <div class="col mb-3">
                 <div class="card border-0 bg-dark">
                     <div class="card-img-bg-color">
-                        <a href="${pageLoc}?=${item.name}">
+                        <a href="${pageLoc}?name=${item.name}">
                             <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/series/${item.landscape}">
                         </a>
                     </div>
@@ -196,7 +196,7 @@ function sortByPopularity() {
             <div class="col mb-3">
                 <div class="card border-0 bg-dark">
                     <div class="card-img-bg-color">
-                        <a href="${pageLoc}?=${item.name}">
+                        <a href="${pageLoc}?name=${item.name}">
                             <img class="img-fluid rounded-5 card-img-top" alt="ex1" src="../images/content/series/${item.landscape}">
                         </a>
                     </div>

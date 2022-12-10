@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="../css/shadow.css">
         <link href="../css/libs/bootstrap.min.css" rel="stylesheet">
         <link href="../css/draggable-sections.css" rel="stylesheet">
+        <link href="../css/libs/hover.css" rel="stylesheet">
     </head>
     <body class="bg-dark">
         <!-- Navigation Bar -->
@@ -84,8 +85,10 @@
                             <img src="../images/content/films/interstellar.jpg" class="d-block w-100 carousel-image-size" alt="Example 1">
                         </div>
                         <div class="carousel-caption d-none d-md-block shadow">
-                            <h2>Interstellar</h2>
-                            <p>Dir. Christopher Nolan</p>
+                            <button class="hvr-grow bg-transparent border-0 text-white" onclick="location = 'movieAndDocumentaryPage.html?name=Interstellar'">
+                                <h2>Interstellar</h2>
+                                <p>Filme</p>
+                            </button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -93,8 +96,10 @@
                             <img src="../images/content/series/travelers.jpg" class="d-block w-100 carousel-image-size" alt="Example 2">
                         </div>
                         <div class="carousel-caption d-none d-md-block shadow">
-                            <h2>Travelers</h2>
-                            <p>Dir. Brad Wright</p>
+                            <button class="hvr-grow bg-transparent border-0 text-white" onclick="location = 'seriesPage.html?name=Travelers'">
+                                <h2>Travelers</h2>
+                                <p>Série</p>
+                            </button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -102,8 +107,10 @@
                             <img src="../images/content/series/tomHR.jpg" class="d-block w-100 carousel-image-size" alt="Example 3">
                         </div>
                         <div class="carousel-caption d-none d-md-block shadow">
-                            <h2>The Old Man</h2>
-                            <p>Dir. Robert Levine</p>
+                            <button class="hvr-grow bg-transparent border-0 text-white" onclick="location = 'seriesPage.html?name=The Old Man'">
+                                <h2>The Old Man</h2>
+                                <p>Série</p>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -122,7 +129,7 @@
                 <div class="container text-end">
                     <div class="me-5 mt-2">
                         <div class="me-3">
-                            <button type="button" class="btn btn-secondary" data-bs-toggle="button" onclick="dragModeSwitch()">Reordenar Carrosséis</button>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="button" onclick="dragModeSwitch()">Reordenar prateleiras</button>
                         </div>
                     </div>
                 </div>
