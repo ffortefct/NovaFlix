@@ -2,7 +2,10 @@ function deleteContent(contentName) {
     let content = localStorage.getItem("favs-list-ipm2022");
     let names = content.split(',')
     let final = names.filter(name => name != contentName)
-    localStorage.setItem("favs-list-ipm2022", final.join(','))
+    if (final.length > 0)
+        localStorage.setItem("favs-list-ipm2022", final.join(','))
+    else 
+        localStorage.removeItem("favs-list-ipm2022")
     genFilms()
 }
 
