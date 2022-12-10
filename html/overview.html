@@ -129,7 +129,9 @@
                 <div class="container text-end">
                     <div class="me-5 mt-2">
                         <div class="me-3">
-                            <button type="button" class="btn btn-secondary" data-bs-toggle="button" onclick="dragModeSwitch()">Reordenar prateleiras</button>
+                            <button type="button" class="btn btn-secondary" data-bs-placement="left"  
+                                data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<span><i class='bi bi-exclamation-circle'> Clica para ativar este modo. Arrasta a prateleira (e.g. Tendências) para aquela que desejas trocar de posição com a selecionada. Volta a clicar no botão para sair deste modo.</span>" 
+                                onclick="dragModeSwitch()">Reordenar prateleiras</button>
                         </div>
                     </div>
                 </div>
@@ -1004,5 +1006,10 @@
         <script src="../javascript/libs/bootstrap.bundle.js"></script>
         <script src="../javascript/draggable-sections.js"></script>
         <script src="../javascript/favs-list.js"></script>
+
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
     </body>
 </html>
